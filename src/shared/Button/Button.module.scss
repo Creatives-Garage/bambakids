@@ -1,0 +1,27 @@
+.buttonWrapper{
+    padding: 16px 16px;
+    background-color: #89C747;
+    margin-top: 8px;
+    border-bottom: 12px solid #079C00;
+    text-decoration: none;
+    height: 32px;
+    width: fit-content;
+    text-align: center;
+    font-size: 32px;
+    text-rendering: optimizelegibility;
+
+    &:hover{
+        border-bottom-width: 8px;
+        margin-top: 14px;
+    }
+}
+
+.active{
+    background-color: #D21987;
+    border-bottom: 12px solid #B30058;
+    
+    &:hover{
+        border-bottom: solid 6px #B30058;
+    }
+}
+
