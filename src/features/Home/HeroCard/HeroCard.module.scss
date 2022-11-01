@@ -1,0 +1,37 @@
+.heroCardWrapper {
+    padding: 24px 64px;
+    background-color: #FFF996;
+    border: solid 4px #1E1E1E;
+    box-shadow: 8px 8px 0px #454545;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.7s ease-in-out;
+
+    h2 {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        text-align: center;
+        color: #1E1E1E;
+        margin-top: 8px;
+    }
+
+    svg{
+        fill: #D21987;
+    }
+
+    &:hover{
+        background-color: #D21987;
+        box-shadow: 16px 16px 0px #454545;
+        h2{
+            color: #FFFBDF;
+        }
+        svg{
+            fill: #FFFBDF;
+        }
+    }
+}
