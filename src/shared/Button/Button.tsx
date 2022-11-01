@@ -6,9 +6,10 @@ interface ButtonProps {
   active?: boolean;
   variant: string;
   action?: MouseEvent;
+  children?: React.ReactNode
 }
 
-const Button = ({ text, active, action, variant }: ButtonProps) => {
+const Button = ({ text, active, action, variant, children }: ButtonProps) => {
   if (variant == "normal") {
     return (
       <>
@@ -20,7 +21,8 @@ const Button = ({ text, active, action, variant }: ButtonProps) => {
           }
           onClick={() => action}
         >
-          {text}
+          <div className={styles.iconWrapper}>{children}</div>
+          <div className={styles.btnText}>{text}</div>
         </div>
       </>
     );
@@ -28,7 +30,8 @@ const Button = ({ text, active, action, variant }: ButtonProps) => {
     return (
       <>
         <div className={styles.search} onClick={() => action}>
-          {text}
+          <div className={styles.iconWrapper}>{children}</div>
+          <div className={styles.btnTextSearch}>{text}</div>
         </div>
       </>
     );

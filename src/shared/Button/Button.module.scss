@@ -1,22 +1,22 @@
 .buttonWrapper {
-    padding: 16px 16px 20px;
-    background-color: #89C747;
+    display: flex;
+    align-items: center;
     margin-top: 8px;
-    border-bottom: 12px solid #079C00;
+    margin-right: 104px;
+    padding: 24px 16px;
+    background-color: #89C747;
+    border-bottom: 10px solid #079C00;
     text-decoration: none;
-    height: 32px;
+    height: 48px;
     width: fit-content;
-    text-align: center;
-    font-size: 32px;
-    text-rendering: optimizelegibility;
-    font-family: Nunito;
-    font-weight: 900;
-    color: #FFFBDF;
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        border-bottom-width: 8px;
         margin-top: 14px;
+        border-bottom-width: 8px;
+    }
+
+    @media (max-width: 1601px) {                            
     }
 }
 
@@ -29,25 +29,45 @@
     }
 }
 
-
 .search{
-    padding: 16px 16px 20px;
-    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    background: #E6ECFF;
     margin-top: 8px;
-    border-bottom: 12px solid #FFFBDF;
-    border-radius: 32px;
-    text-decoration: none;
+    border-bottom: 8px solid #B0C3FF;
+    border-radius: 20px;
     height: 32px;
-    width: fit-content;
-    text-align: center;
-    font-size: 24px;
-    text-rendering: optimizelegibility;
-    font-family: Nunito;
-    font-weight: 900;
-    color: #000000;
+    width: 200px;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         border-bottom-width: 8px;
         margin-top: 14px;
     }
+}
+
+.btnText{
+    text-align: center;
+    font-size: 20px;
+    text-rendering: optimizelegibility;
+    font-family: Nunito;
+    font-weight: 900;
+    color: #FFFBDF;
+}
+
+.btnTextSearch{
+    text-align: center;
+    font-size: 20px;
+    text-rendering: optimizelegibility;
+    font-family: Nunito;
+    font-weight: 900;
+    color: #000000;
+}
+
+.iconWrapper{
+    width: 32px; 
+    height: 32px;
+    margin-right: 8px; 
 }
