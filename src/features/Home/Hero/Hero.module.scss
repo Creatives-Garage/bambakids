@@ -1,0 +1,62 @@
+.heroWrapper {
+    padding: 40px 64px;
+    background-color: #FFF000;
+    background-image: url("/abstractBG.svg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+    height: 800px;
+
+    h1 {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        text-align: center;
+        color: #1E1E1E;
+        margin-top: 24px;
+
+        @media (max-width: 1600px) {
+            font-size: 35px;                
+        }
+    }
+
+    p {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        color: #2C2B2B;
+        margin-top: -16px;
+
+        @media (max-width: 1600px) {
+            font-size: 24px;                
+        }
+    }
+}
+
+.cardsWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0px 48px;
+}
+
+.toggleBambaKidsSection{
+    margin-top: 56px;
+}
+
+.zigzag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -24px;
+
+    svg{
+        height: 32px;
+
+        @media (max-width: 1600px) {
+            height: 24px;            
+        }
+    }
+}
