@@ -7,15 +7,27 @@ function Nav() {
   return (
     <div className={styles.navWrapper}>
       <div className={styles.navItems}>
-        <Button text="Home" variant="normal" />
-        <Button text="About us" variant="normal" />
+        <div className={styles.navItemsLeft}>
+          <Button text="Home" variant="normal">
+            <Image src="/icons/home.svg" alt="home" width={32} height={32}/>            
+          </Button>
+          <Button text="About us" variant="normal">
+            <Image src="/icons/information.svg" alt="information" width={32} height={32}/>
+          </Button>
+        </div>
 
         <div className={styles.navItemsCenter}>
           <Image alt="logo" src="/logo.png" width={80} height={80} />
         </div>
 
-        <Button text="Download" variant="normal" />
-        <Button text="Search" variant="search" />
+        <div className={styles.navItemsRight}>
+          <Button text="Download" variant="normal">
+            <Image src="/icons/download.svg" alt="information" width={32} height={32}/>
+          </Button>
+          <Button text="Search" variant="search">
+            <Image src="/icons/search.svg" alt="information" width={32} height={32}/>
+          </Button>
+        </div>
       </div>
     </div>
   );

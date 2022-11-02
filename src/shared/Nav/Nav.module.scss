@@ -2,14 +2,18 @@
     position: relative;
     width: 100vw;
     height: 80px;
-    background-image: url("/navwave.svg");
-    background-color: #FFF996;
-    background-repeat: no-repeat;
-    top: 0;
-    margin-top: 0;
-    background-size: 100%;
-    background-position-y: top;
-    padding: 8px 64px 2px;
+    background-color: #F6DB34;
+    padding: 8px 320px 2px;
+
+    @media (max-width: 1601px) {
+        padding: 8px 132px 2px;                
+    }
+    @media (max-width: 1401px) {
+        padding: 8px 108px 2px;                
+    }
+    @media (max-width: 1026px) {
+        padding: 8px 56px 2px;                
+    }
 }
 
 .navItems{
@@ -20,6 +24,16 @@
 .navItemsLeft{
     display: flex;
     justify-content: space-around;
+}
+
+.navItemsCenter{
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    top: 40%;
+    width: 80px;
+    height: 80px;
 }
 
 .navItemsRight{
