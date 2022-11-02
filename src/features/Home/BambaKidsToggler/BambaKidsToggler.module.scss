@@ -1,0 +1,94 @@
+.togglerWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -132px;
+}
+
+.togglerContainer {
+    background: #0259AA;
+    border-width: 8px 8px 0px 0px;
+    border-style: solid;
+    border-color: #003769;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 64px;
+    width: 70%;
+    position: relative;
+}
+
+.togglesContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.togglerButton{
+    margin-left: 0px;
+    border-width: 4px 4px 0px 0px;
+    border-style: solid;
+    border-color: #F6DB34;
+    background-color: #F6DB34;
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    margin-top: -64px;
+    transition: all 0.5s ease-in-out;
+}
+
+.active {
+    border-width: 16px 16px 0px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.contentArea{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descriptions {
+    width: 55%;
+    h3 {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        color: #FFF000;
+    }
+
+    p {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        color: #FFFBDF;
+    }
+}
+
+.photos{
+    position: relative;
+    display: flex;
+    margin-right: -96px;       
+}
+
+.photo{
+    position: absolute;
+    z-index: 1;
+    border-radius: 8px;
+    transform: rotate(-18deg);
+    box-shadow:rgba(39, 39, 39, 0.25);
+    transition: all 0.5s ease-in-out;
+    width: fit-content;
+    height: fit-content;
+}
+
+.activePhoto{
+    z-index: 2;
+    transform: rotate(-2deg);
+}
+
+.dormantPhoto{
+    z-index: 0;
+}
