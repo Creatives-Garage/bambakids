@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import AppDownloadSection from '../features/Home/AppDownloadSection'
 import BambaKidsToggler from '../features/Home/BambaKidsToggler'
 import Footer from '../features/Home/Footer'
 import Hero from '../features/Home/Hero'
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <Nav/>
       <Hero/>
       <BambaKidsToggler/>
+      <AppDownloadSection />
       <Footer />
     </div>
   )

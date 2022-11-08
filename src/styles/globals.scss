@@ -5,3 +5,17 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Bamba";
+  src: url('../../public/fonts/bambakids-headline-bold-font.woff');
+  font-weight: bold;
+  font-style: italic;
+}
+  
+@font-face {
+  font-family: "Bamba";
+  src: url('../../public/fonts/bambakids-headline-regular-font.woff');
+  font-weight: normal;
+  font-style: normal;
+}
