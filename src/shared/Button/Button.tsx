@@ -1,15 +1,16 @@
-import React, { MouseEvent } from "react";
+import React, { ButtonHTMLAttributes, MouseEvent } from "react";
 import styles from "./Button.module.scss";
 
 interface ButtonProps {
   text?: string;
   active?: boolean;
   variant: string;
-  action?: MouseEvent;
-  children?: React.ReactNode
+  action?: any;
+  children?: React.ReactNode;
+  type?: any;
 }
 
-const Button = ({ text, active, action, variant, children }: ButtonProps) => {
+const Button = ({ text, active, action, variant, children, type }: ButtonProps) => {
   if (variant == "normal") {
     return (
       <>
@@ -29,10 +30,10 @@ const Button = ({ text, active, action, variant, children }: ButtonProps) => {
   } else {
     return (
       <>
-        <div className={styles.search} onClick={() => action}>
+        <button className={styles.search} onClick={() => action} type={type}>
           <div className={styles.iconWrapper}>{children}</div>
           <div className={styles.btnTextSearch}>{text}</div>
-        </div>
+        </button>
       </>
     );
   }

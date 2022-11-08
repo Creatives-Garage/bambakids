@@ -19,6 +19,7 @@
 .navItems{
     display: flex;
     justify-content: space-between;
+    transition: all 0.5s ease-in-out;
 }
 
 .navItemsLeft{
@@ -41,3 +42,45 @@
     justify-content: space-between;
 }
 
+//----------------------------- search ---------------------------------
+.searchFormWrapper{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.searchForm{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchInput{
+    width: 100%;
+    height: 54px;
+    border-radius: 32px;
+    border: none;
+    padding-left: 28px;
+    font-family: Nunito;
+    font-size: 16px;
+    margin-right: 32px;
+    margin-top: 8px;
+
+    &:focus{
+        outline: none;
+        border: solid #D21987 4px;
+    }
+}
+
+.resultsModal{
+    background-color: white;
+    height: 160px;
+    width: 82%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 16px;
+    margin-top: 8px;
+}
+
+.hiddenItem{
+    display: none;
+}
