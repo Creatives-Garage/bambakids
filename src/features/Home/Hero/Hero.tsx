@@ -13,7 +13,7 @@ function Hero() {
       <h1>WELCOME!</h1>
       <p>Pick an activity from the options below</p>
       <div className={styles.cardsWrapper}>
-        <HeroCard text="READ" route="/read">
+        <HeroCard text="READ" route="/soma">
           <svg
             width="70"
             height="56"

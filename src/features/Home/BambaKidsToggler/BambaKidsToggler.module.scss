@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     margin-top: -132px;
+    margin-bottom: 72px;
 }
 
 .togglerContainer {
@@ -26,20 +27,20 @@
 }
 
 .togglerButton{
-    margin-left: 0px;
-    border-width: 4px 4px 0px 0px;
+    cursor: pointer;
+    margin-right: 48px;
     border-style: solid;
-    border-color: #F6DB34;
-    background-color: #F6DB34;
+    border-color: white;
     border-radius: 10px;
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     margin-top: -64px;
     transition: all 0.5s ease-in-out;
 }
 
 .active {
-    border-width: 16px 16px 0px 0px;
+    transform: scale(140%);
+    border-bottom:#F6DB34 solid 4px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -50,10 +51,11 @@
 
 .descriptions {
     width: 55%;
+    margin-top: 24px;
     h3 {
-        font-family: 'Nunito';
+        font-family: Bamba;
         font-style: normal;
-        font-weight: 900;
+        font-weight: 600;
         font-size: 32px;
         color: #FFF000;
     }
@@ -61,7 +63,8 @@
     p {
         font-family: 'Nunito';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
+        line-height: 32px;
         font-size: 20px;
         color: #FFFBDF;
     }
