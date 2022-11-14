@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./Nav.module.scss";
 import Button from "../Button";
@@ -14,16 +15,16 @@ function Nav() {
     alert(`Search Test value ${searchValue}!`)
   }
 
-  console.log(searchForm);
+  const router = useRouter();
 
   return (
     <div className={styles.navWrapper}>
         <div className={searchForm === false ? styles["navItems"] : styles["hiddenItem"]}>
           <div className={styles.navItemsLeft}>
-            <Button text="Home" variant="normal">
+            <Button text="Home" variant="normal" icon action={() => router.push("/")}>
               <Image src="/icons/home.svg" alt="home" width={32} height={32}/>            
             </Button>
-            <Button text="About us" variant="normal">
+            <Button text="About us" variant="normal" icon>
               <Image src="/icons/information.svg" alt="information" width={32} height={32}/>
             </Button>
           </div>
@@ -33,7 +34,7 @@ function Nav() {
           </div>
 
           <div className={styles.navItemsRight}>
-            <Button text="Download" variant="normal">
+            <Button text="Download" variant="normal" icon action={() => router.push("/#download")}>
               <Image src="/icons/download.svg" alt="information" width={32} height={32}/>
             </Button>
             <div onClick={() => setSearchForm(!searchForm)}>
