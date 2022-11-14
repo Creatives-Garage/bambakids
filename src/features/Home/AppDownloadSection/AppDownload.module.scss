@@ -53,10 +53,12 @@
     }
 }
 
-.phone2{    
-}
 .phone1{
-    margin-right: -128px;
+    margin-right: 0;    
+}
+
+.phone2{
+    margin-left: -128px;
     animation-name: phone1;
     animation-timing-function: ease-in-out;
     animation-duration: 1000ms;
@@ -70,7 +72,9 @@
     background-image: url("/svgIconsGroup.svg");
     background-repeat: no-repeat;
     background-position: left;
-    height: 100%;
-    width: 227px;
-    transform: scaleY(90%) scaleX(85%);
+    background-size: contain;
+    height: 105%;
+    width: 230px;
+    margin-left: 0px;
+    // transform: scaleY(90%) scaleX(85%);
 }
