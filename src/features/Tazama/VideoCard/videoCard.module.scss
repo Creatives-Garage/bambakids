@@ -1,0 +1,54 @@
+.videoWrapper {
+    position: relative;
+    border: solid 6px #D21987;
+    background-color: #D21987;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+
+    &:hover {
+        .playIconWrapper {
+            visibility: visible;
+            bottom: 50%;
+        }
+    }
+}
+
+.thumbnail {
+    width: fit-content;
+    height: fit-content;
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+}
+
+.descriptionBox {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    font-family: Bamba;
+    font-size: 20px;
+}
+
+.playIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+    width: 72px;
+    height: 72px;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.playIcon {}
