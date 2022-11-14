@@ -7,10 +7,11 @@ interface ButtonProps {
   variant: string;
   action?: any;
   children?: React.ReactNode;
+  icon?: boolean;
   type?: any;
 }
 
-const Button = ({ text, active, action, variant, children, type }: ButtonProps) => {
+const Button = ({ text, active, action, variant, children, type, icon }: ButtonProps) => {
   if (variant == "normal") {
     return (
       <>
@@ -20,9 +21,9 @@ const Button = ({ text, active, action, variant, children, type }: ButtonProps) 
               ? styles["active"] + " " + styles["buttonWrapper"]
               : styles["buttonWrapper"]
           }
-          onClick={() => action}
+          onClick={action}
         >
-          <div className={styles.iconWrapper}>{children}</div>
+          { icon && <div className={styles.iconWrapper}>{children}</div>}
           <div className={styles.btnText}>{text}</div>
         </div>
       </>

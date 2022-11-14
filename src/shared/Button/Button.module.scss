@@ -1,8 +1,9 @@
 .buttonWrapper {
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin-top: 8px;
-    margin-right: 104px;
+    margin-right: 16px;
     padding: 24px 16px;
     background-color: #89C747;
     border-bottom: 10px solid #079C00;
@@ -47,8 +48,7 @@
     cursor: pointer;
 
     &:hover {
-        border-bottom-width: 8px;
-        margin-top: 14px;
+        background: #d5e0ff;
     }
 }
 
