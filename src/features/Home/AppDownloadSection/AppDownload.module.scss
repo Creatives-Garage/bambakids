@@ -1,0 +1,80 @@
+.sectionWrapper {
+    display: flex;
+    padding-top: 132px;
+    padding-right: 64px;
+    padding-bottom: 64px;
+    padding-left: 132px;
+    padding-right: 64px;
+}
+
+.phoneSection {
+    display: flex;
+    width: 80%;
+}
+
+.downloadDescription {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.downloadText{
+    h3 {
+        font-family: 'Bamba';
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+        color: #1E1E1E;
+    }
+
+    p {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.phones{
+    position: relative;
+    display: flex;
+}
+
+@keyframes phone1 {
+    0%{
+        margin-top: 0px;
+    }
+    
+    100%{
+        margin-top: -40px;
+    }
+}
+
+.phone1{
+    margin-right: 0;    
+}
+
+.phone2{
+    margin-left: -128px;
+    animation-name: phone1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1000ms;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.svgIcons{
+    background-image: url("/svgIconsGroup.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 105%;
+    width: 230px;
+    margin-left: 0px;
+    // transform: scaleY(90%) scaleX(85%);
+}
