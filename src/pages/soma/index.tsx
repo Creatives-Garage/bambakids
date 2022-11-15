@@ -26,4 +26,4 @@ const Soma: NextPage = () => {
   );
 };
 
-export default Soma;
+export default Soma
