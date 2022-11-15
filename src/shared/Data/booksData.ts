@@ -1,7 +1,7 @@
 import { loremParagraph } from "./utilityData";
 import BabasPickUpImage from "../../../public/photos/books/BabasPickUp/cover.png"
 
-const booksData = [
+export const babasPickUp =
     {
         bookId: 1,
         bookName: "Baba's Pick Up",
@@ -19,8 +19,8 @@ const booksData = [
 
         pagesData: [
             {
-                pageTitle: "",
-                pageDescription: "The time I spent with my father during my formative years was delightful",
+                pageTitle: "Baba's Pickup",
+                pageDescription: "A daughter relives the amazing memories she had of her dad while they were kids. Babas Pickup is a story about her adventures with her sisters and father.",
                 pageImage: ""
             },
             {
@@ -77,4 +77,3 @@ const booksData = [
             },
         ]
     }
-]
