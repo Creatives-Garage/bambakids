@@ -2,7 +2,6 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin-top: 8px;
     margin-right: 16px;
     padding: 24px 16px;
     background-color: #89C747;
@@ -13,7 +12,7 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        margin-top: 14px;
+        translate: 0px 4px ;
         border-bottom-width: 8px;
     }
 
