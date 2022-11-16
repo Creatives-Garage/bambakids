@@ -14,7 +14,7 @@ const Soma: NextPage = () => {
     <div className={styles.pageWrapper}>
       <Nav />
       <div className={styles.pageContent}>
-        <SomaBookCard link="" bookName="Babas Pick Up" image={BabaPickUp} />
+        <SomaBookCard link="/soma/babas-pickup" bookName="Babas Pick Up" image={BabaPickUp} />
       </div>
       <div className={styles.loadMoreWrapper}>
         <Button variant="normal" text="LOAD MORE..." icon={false}></Button>
