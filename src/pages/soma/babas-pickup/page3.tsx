@@ -9,8 +9,14 @@ import Button from '../../../shared/Button';
 import {motion, useReducedMotion} from "framer-motion"
 
 const imageVariants: any = {
-  in: {
+  inRight: {
     x: -100,
+    transition: {
+      duration: 0.9
+    }
+  },
+  inLeft: {
+    x: 100,
     transition: {
       duration: 0.9
     }
@@ -25,7 +31,14 @@ const imageVariants: any = {
 };
 
 const descriptionVariants: any = {
-  in: {
+  inRight: {
+    y: 50,
+    transition: {
+      duration: 0.9
+    }
+  },
+
+  inLeft: {
     y: 50,
     transition: {
       duration: 0.9
@@ -43,34 +56,30 @@ const descriptionVariants: any = {
 
 const Page2 = () => {
   const router = useRouter();
+  const shouldReduceMotion = useReducedMotion();
 
   return (
     <div className={styles.page2Container}>
       <div className={styles.buttonsContainer}>
-        <button
-          onClick={() => router.push("/soma/babas-pickup/page2")}
-          className={styles.pageButton}
-        >
-          Previous Page
-        </button>
-        <button
-          onClick={() => router.push("/soma/babas-pickup/page4")}
-          className={styles.pageButton}
-        >
-          Next Page
-        </button>
+        <Button variant="normal" text="Previous Page" action={()=> router.push("/soma/babas-pickup/page2")}></Button>
+        <Button variant="normal" text="Next Page" action={()=> router.push("/soma/babas-pickup/page4")}></Button>
       </div>
       <div className={styles.sections}>
         <div className={styles.sectionLeft}>
           <div className={styles.page3ContentContainer}>
-            <div className={styles.page3ImageWrapperLeft}>
+            <motion.div 
+              variants={!shouldReduceMotion ? imageVariants : null}
+              initial="in"
+              animate={["center"]}
+              className={styles.page3ImageWrapperLeft}
+            >
               <Image
                 src={page3Image}
                 width={320}
                 height={400}
                 alt="Baba pick up"
               />
-            </div>
+            </motion.div>
             <p className={styles["page3Description"] + " " + styles["text"]}>
               { babasPickUp.pagesData[3].pageDescription }
             </p>
@@ -87,7 +96,7 @@ const Page2 = () => {
               />
             </div>
             <p className={styles["page3DescriptionRight"] + " " + styles["text"]}>
-              { babasPickUp.pagesData[4].pageDescription }
+              { babasPickUp.pagesData[3].pageDescription2 }
             </p>
           </div>
         </div>
