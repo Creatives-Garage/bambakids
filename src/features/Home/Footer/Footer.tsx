@@ -16,9 +16,9 @@ function Footer() {
             alt="Creatives Garage Logo"
           />
           <div className={styles.socialmedia}>
-            <div className={styles.facebook}></div>
-            <div className={styles.instagram}></div>
-            <div className={styles.twitter}></div>
+            <a href="https://www.facebook.com/Creatives.Garage/"><div className={styles.facebook}></div></a>
+            <a href="https://www.instagram.com/creativesgarage/?hl=en"><div className={styles.instagram}></div></a>
+            <a href="https://twitter.com/cr8vesgarage?lang=en"><div className={styles.twitter}></div></a>
           </div>
         </div>
         <div className={styles.footerTextGroup}>
