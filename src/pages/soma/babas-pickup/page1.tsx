@@ -52,7 +52,7 @@ const Page1 = () => {
           animate={["center"]} 
           className={styles.page1ImageWrapper}
         >
-          <Image src={page1Image} width={420} height={540} alt="Baba pick up" />
+          <Image src={page1Image} width={420} height={540} alt="Baba pick up" priority/>
         </motion.div>
         <motion.div 
           className={styles["page1Description"] + " " + styles["text"]}
