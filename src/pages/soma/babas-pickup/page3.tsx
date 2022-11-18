@@ -77,7 +77,9 @@ const Page2 = () => {
                 src={page3Image}
                 width={320}
                 height={400}
-                alt="Baba pick up"
+                alt="Baba pick up" 
+                placeholder="blur"
+                priority
               />
             </motion.div>
             <p className={styles["page3Description"] + " " + styles["text"]}>
@@ -93,6 +95,7 @@ const Page2 = () => {
                 width={360}
                 height={480}
                 alt="Baba pick up"
+                priority
               />
             </div>
             <p className={styles["page3DescriptionRight"] + " " + styles["text"]}>

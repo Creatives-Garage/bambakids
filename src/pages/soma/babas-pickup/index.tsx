@@ -81,7 +81,7 @@ const BabasPickUp = () => {
           initial="in"
           animate={["center"]}
         >
-          <Image src={Page1} width={420} height={460} alt="Baba pick up" />
+          <Image src={Page1} width={420} height={460} alt="Baba pick up" priority/>
         </motion.div>
         <motion.div 
           className={styles.page0Description}
