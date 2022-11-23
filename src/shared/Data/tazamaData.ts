@@ -3,6 +3,7 @@ export const tazamaData: tazamaDataType = [
       categoryName: "Hadithi TV",
       data: [
         {
+          videoId: "1",
           videoName: "Kwame the Girraffe",
           thumbnail: "",
         }
@@ -12,14 +13,17 @@ export const tazamaData: tazamaDataType = [
       categoryName: "Stori Stori",
       data: [
         {
+          videoId: "2",
           videoName: "Ayana the Makanga",
           thumbnail: "",
         },
         {
+          videoId: "3",
           videoName: "Mama Onyis",
           thumbnail: "",
         },
         {
+          videoId: "4",
           videoName: "Being Tanu",
           thumbnail: "",
         },
@@ -29,6 +33,7 @@ export const tazamaData: tazamaDataType = [
       categoryName: "Sakata Rhymes",
       data: [
         {
+          videoId: "5",
           videoName: "Sakata Rhyme",
           thumbnail: "",
         }
@@ -39,6 +44,7 @@ export const tazamaData: tazamaDataType = [
 // types
 
 export interface tazamaCategoryDataObject {
+    videoId: string;
     videoName: string;
     thumbnail: string;
 }
