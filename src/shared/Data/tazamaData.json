@@ -1,0 +1,34 @@
+{
+    "videos": [
+        {
+            "videoId": "1",
+            "categoryName": "Hadithi TV",
+            "videoName": "Kwame the Girraffe",
+            "thumbnail": ""
+        },
+        {
+            "videoId": "2",
+            "videoName": "Ayana the Makanga",
+            "thumbnail": "",
+            "categoryName": "Stori Stori"
+        },
+        {
+            "videoId": "3",
+            "categoryName": "Hadithi TV",
+            "videoName": "Mama Onyis",
+            "thumbnail": ""
+        },
+        {
+            "videoId": "4",
+            "categoryName": "Hadithi TV",
+            "videoName": "Being Tanu",
+            "thumbnail": ""
+        },
+        {
+            "videoId": "5",
+            "categoryName": "Sakata Rhymes",
+            "videoName": "Sakata Rhyme",
+            "thumbnail": ""
+        }
+    ]
+}
