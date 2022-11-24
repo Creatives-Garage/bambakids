@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import path from 'path';
 import fs from 'fs/promises';
 
-export default function videoName (props: { specificStarData: any, hasError: boolean }) {
+export default function VideoName (props: { specificStarData: any, hasError: boolean }) {
     const router = useRouter();
     if (props.hasError) {
       return <h1>Error - please try another parameter</h1>
