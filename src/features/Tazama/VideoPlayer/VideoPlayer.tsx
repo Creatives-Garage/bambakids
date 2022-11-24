@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useRouter } from "next/router";
 import styles from "./videoPlayer.module.scss";
 import Button from "../../../shared/Button";
 import Mute from '../../../../public/icons/mute.svg';
@@ -7,26 +8,30 @@ import Play from '../../../../public/icons/play.svg';
 import Pause from '../../../../public/icons/pause.svg';
 import FullScreen from '../../../../public/icons/reduceScreen.svg';
 import SmallScreen from '../../../../public/icons/wideScreen.svg';
+import YoutubeEmbedder from "../YoutubeEmbedder/YoutubeEmbedder";
 
-function VideoPlayer(){
+function VideoPlayer({videoName, videoCategory}: any){
   const [playStatus, setplayStatus] = useState<boolean>(false);
   const [muteStatus, setMuteStatus] = useState<boolean>(false);
   const [isFullScreen, setIsFullScreen] = useState<boolean>(false);
   const [isWideScreen, setIsWideScreen] = useState<boolean>(false);
 
-  console.log("is muted", muteStatus)
+  const router = useRouter();
+
+  console.log("video name", videoName)
   return (
     <div className={styles.componentWrapper}>
       <div className={styles.playerHeader}>
-        <button className={styles.buttonWrapper}></button>      
+        <button className={styles.buttonWrapper} onClick={()=> router.back()}></button>      
         <div className={styles.videoTitleGroup}>
-          <h1>VideoName</h1>
-          <h2>Video Category</h2>
+          <h1>{videoName}</h1>
+          <h2>{videoCategory}</h2>
         </div>      
       </div>
-      <div className={styles.playerWrapper}>        
+      <div className={styles.playerWrapper}>
+        <YoutubeEmbedder embedId="rngCBiCTmr0" />       
       </div>      
-      <div className={styles.videoControls}>
+      {/* <div className={styles.videoControls}>
         <div className={styles.playbackControls}>
           <Button 
             variant="normal"
@@ -66,7 +71,7 @@ function VideoPlayer(){
             >
           </Button>
         </div>
-    </div>      
+      </div> */}
     </div>
   );
 }
