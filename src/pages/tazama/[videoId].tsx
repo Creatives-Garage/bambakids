@@ -8,18 +8,16 @@ import path from 'path';
 import fs from 'fs/promises';
 import Link from "next/link";
 
-export default function videoName(props: { videoData: any, hasError: boolean, allVideos: any }) {
-  const videoData = props.videoData
-  const allVideos = props.allVideos?.videos
-  console.log("All: ", videoData)
+export default function videoName({videos}: any) {
+  console.log("All: ", videos)
   const router = useRouter();
+  const { videoId } = router.query;
+  const video = videos.videos?.find(
+    (video: any) => video?.id === videoId
+  );
 
   function getSimilarVideos() {
 
-  }
-
-  if (props.hasError) {
-    return <h1>Error - please try another parameter</h1>
   }
 
   if (router.isFallback) {
@@ -29,14 +27,14 @@ export default function videoName(props: { videoData: any, hasError: boolean, al
     <div className={styles.pageContainer}>
       <Nav />
       <div className={styles.videoPlayerWrapper}>
-        <VideoPlayer  />
+        <VideoPlayer  data={video}/>
         <div>
           <div className={styles.titleContainer}>
             MORE LIKE THIS
           </div>
           <div className={styles.suggestedVideosWrapper}>
             <div className={styles.suggestedVideos}>
-              {allVideos?.map((item: any, index: number) =>
+              {videos.videos?.map((item: any, index: number) =>
                 <div key={index}>
                   <Link href={`/tazama/${item.videoId}`}>
                     <div className={styles.suggestedVideo}>
@@ -63,31 +61,40 @@ async function getData() {
   return data;
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const data = await getData();
-  const pathsWithParams = data.videos.map((video: any, index: number) => ({ params: { videoId: video.videoId } }))
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const data = await getData();
+//   const pathsWithParams = data.videos.map((video: any, index: number) => ({ params: { videoId: video.videoId } }))
 
-  return {
-    paths: pathsWithParams,
-    fallback: true
-  }
-}
+//   return {
+//     paths: pathsWithParams,
+//     fallback: true
+//   }
+// }
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const videoID = context.params?.videoID;
-  const data = await getData();
-  const foundVideo = data.videos.find((item: any) => videoID === item.videoID);
+// export const getStaticProps: GetStaticProps = async (context) => {
+//   const videoID = context.params?.videoID;
+//   const data = await getData();
+//   const foundVideo = data.videos.find((item: any) => videoID === item.videoID);
 
-  if (!foundVideo) {
-    return {
-      props: { hasError: true },
-    }
-  }
+//   if (!foundVideo) {
+//     return {
+//       props: { hasError: true },
+//     }
+//   }
 
+//   return {
+//     props: {
+//       videoData: foundVideo,
+//       allVideos: data
+//     }
+//   }
+// }
+
+export async function getServerSideProps(context: any) {
+  const payload = await getData();
   return {
     props: {
-      videoData: foundVideo,
-      allVideos: data
-    }
-  }
+      videos: payload,
+    },
+  };
 }

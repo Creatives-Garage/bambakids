@@ -10,7 +10,7 @@ import FullScreen from '../../../../public/icons/reduceScreen.svg';
 import SmallScreen from '../../../../public/icons/wideScreen.svg';
 import YoutubeEmbedder from "../YoutubeEmbedder/YoutubeEmbedder";
 
-function VideoPlayer({videoName, videoCategory}: any){
+function VideoPlayer({data}: any){
   const [playStatus, setplayStatus] = useState<boolean>(false);
   const [muteStatus, setMuteStatus] = useState<boolean>(false);
   const [isFullScreen, setIsFullScreen] = useState<boolean>(false);
@@ -18,14 +18,14 @@ function VideoPlayer({videoName, videoCategory}: any){
 
   const router = useRouter();
 
-  console.log("video name", videoName)
+  console.log("video name", data)
   return (
     <div className={styles.componentWrapper}>
       <div className={styles.playerHeader}>
         <button className={styles.buttonWrapper} onClick={()=> router.back()}></button>      
         <div className={styles.videoTitleGroup}>
-          <h1>{videoName}</h1>
-          <h2>{videoCategory}</h2>
+          {/* <h1>{videoName}</h1>
+          <h2>{videoCategory}</h2> */}
         </div>      
       </div>
       <div className={styles.playerWrapper}>
