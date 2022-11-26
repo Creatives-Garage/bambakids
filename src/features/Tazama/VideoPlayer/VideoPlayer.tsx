@@ -24,12 +24,12 @@ function VideoPlayer({data}: any){
       <div className={styles.playerHeader}>
         <button className={styles.buttonWrapper} onClick={()=> router.back()}></button>      
         <div className={styles.videoTitleGroup}>
-          {/* <h1>{videoName}</h1>
-          <h2>{videoCategory}</h2> */}
+          <h1>{data?.videoName}</h1>
+          <h2>{data?.categoryName}</h2>
         </div>      
       </div>
       <div className={styles.playerWrapper}>
-        <YoutubeEmbedder embedId="rngCBiCTmr0" />       
+        <YoutubeEmbedder embedId={data?.embedId} />       
       </div>      
       {/* <div className={styles.videoControls}>
         <div className={styles.playbackControls}>
