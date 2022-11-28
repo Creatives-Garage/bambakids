@@ -8,21 +8,18 @@ import path from 'path';
 import fs from 'fs/promises';
 import Link from "next/link";
 
-export default function videoName({videos}: any) {
-  console.log("All: ", videos)
+export default function VideoName({videos}: any) {
+  const videoData = videos.videos;  
   const router = useRouter();
   const { videoId } = router.query;
-  const video = videos.videos?.find(
-    (video: any) => video?.id === videoId
+  
+  const video = videoData?.find(
+    (video: any) => video?.videoId === videoId
   );
-
-  function getSimilarVideos() {
-
-  }
-
   if (router.isFallback) {
     return <h1>Loading...</h1>
   }
+  
   return (
     <div className={styles.pageContainer}>
       <Nav />
@@ -60,36 +57,6 @@ async function getData() {
 
   return data;
 }
-
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const data = await getData();
-//   const pathsWithParams = data.videos.map((video: any, index: number) => ({ params: { videoId: video.videoId } }))
-
-//   return {
-//     paths: pathsWithParams,
-//     fallback: true
-//   }
-// }
-
-// export const getStaticProps: GetStaticProps = async (context) => {
-//   const videoID = context.params?.videoID;
-//   const data = await getData();
-//   const foundVideo = data.videos.find((item: any) => videoID === item.videoID);
-
-//   if (!foundVideo) {
-//     return {
-//       props: { hasError: true },
-//     }
-//   }
-
-//   return {
-//     props: {
-//       videoData: foundVideo,
-//       allVideos: data
-//     }
-//   }
-// }
-
 export async function getServerSideProps(context: any) {
   const payload = await getData();
   return {

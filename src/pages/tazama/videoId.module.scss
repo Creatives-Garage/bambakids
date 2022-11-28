@@ -2,6 +2,7 @@
     background-color: #FFF996;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .videoPlayerWrapper{
@@ -26,7 +27,7 @@
 }
 
 .suggestedVideo{
-    width: 65%;
+    width: 200px;
 }
 
 .video{
