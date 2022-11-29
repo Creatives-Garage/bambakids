@@ -3,16 +3,40 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./Nav.module.scss";
 import Button from "../Button";
+import Fuse from "fuse.js";
+import Link from "next/link";
 
-function Nav() {
+function Nav({payload}: any) {
   const [searchValue, setSearchValue] = useState<string>("")
   const [searchForm, setSearchForm] = useState<boolean>(false);
   const [resultsModal, setResultsModal] = useState<boolean>(false);
+  const [searchResults, setSearchResults] = useState<any>([])
+  console.log("Payload: ", payload)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
     setSearchForm(!searchForm);
+    
     alert(`Search Test value ${searchValue}!`)
+  }
+
+    const options = {
+    includeScore: true,
+    keys: [
+      {
+        name: "videoName",
+        weight: 0.9
+      },
+    ],
+  };
+  const fuse = new Fuse(payload, options);
+
+  function handleSearch (e:any){
+    setResultsModal(true); 
+    setSearchValue(e.target.value);
+    const results = fuse.search(searchValue);
+    setSearchResults(results);
+    console.log("Results: ", results);
   }
 
   const router = useRouter();
@@ -55,7 +79,7 @@ function Nav() {
               value={searchValue}
               type="text"
               placeholder='Search Bamba Kids'
-              onChange={(e)=> {setResultsModal(true); setSearchValue(e.target.value)}}
+              onChange={handleSearch}
               onBlur={()=> {setResultsModal(false)}}
             />
             <Button text="Search" variant="search" type="submit">
@@ -64,7 +88,23 @@ function Nav() {
           </form>
         
         { resultsModal &&
-          <div className={styles.resultsModal}>          
+          <div className={styles.resultsModal}>
+            {searchResults.length > 0 ? (
+                searchResults?.map((result: any, index: number) => (
+                  <div key={index}>
+                    <Link href={`/tazama/${result?.item.videoId}`}>
+                      <div className={styles.searchResult}>
+                        <div onClick={()=> {router.push(`/tazama/${result?.item.videoId}`); setResultsModal(true); setSearchValue(""); setSearchForm(false);}}>
+                          <p>{result?.item.videoName}</p>
+                          <span>Category: {result?.item.categoryName}</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                ))
+              ) : (
+                <div className={styles.searchResult}>No results found</div>
+              )}          
           </div>
         }
         </div>
