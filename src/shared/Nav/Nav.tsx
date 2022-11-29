@@ -11,8 +11,8 @@ function Nav({payload}: any) {
   const [searchForm, setSearchForm] = useState<boolean>(false);
   const [resultsModal, setResultsModal] = useState<boolean>(false);
   const [searchResults, setSearchResults] = useState<any>([])
-  console.log("Payload: ", payload)
-
+  const [focus, setFocus] = useState(false);
+  
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
     setSearchForm(!searchForm);
@@ -77,10 +77,10 @@ function Nav({payload}: any) {
             <input
               className={styles.searchInput}
               value={searchValue}
-              type="text"
+              type="text" 
               placeholder='Search Bamba Kids'
               onChange={handleSearch}
-              onBlur={()=> {setResultsModal(false)}}
+              onBlur={()=> setTimeout(()=>setResultsModal(!resultsModal), 2000)}
             />
             <Button text="Search" variant="search" type="submit">
               <Image src="/icons/search.svg" alt="information" width={32} height={32}/>
@@ -92,9 +92,9 @@ function Nav({payload}: any) {
             {searchResults.length > 0 ? (
                 searchResults?.map((result: any, index: number) => (
                   <div key={index}>
-                    <Link href={`/tazama/${result?.item.videoId}`}>
-                      <div className={styles.searchResult}>
-                        <div onClick={()=> {router.push(`/tazama/${result?.item.videoId}`); setResultsModal(true); setSearchValue(""); setSearchForm(false);}}>
+                    <Link href={`/tazama/${result?.item.videoId}`} >
+                      <div className={styles.searchResult} >
+                        <div>
                           <p>{result?.item.videoName}</p>
                           <span>Category: {result?.item.categoryName}</span>
                         </div>
