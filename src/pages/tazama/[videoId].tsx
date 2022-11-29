@@ -22,7 +22,7 @@ export default function VideoName({videos}: any) {
   
   return (
     <div className={styles.pageContainer}>
-      <Nav />
+      <Nav payload={videoData} />
       <div className={styles.videoPlayerWrapper}>
         <VideoPlayer  data={video}/>
         <div>
@@ -57,6 +57,7 @@ async function getData() {
 
   return data;
 }
+
 export async function getServerSideProps(context: any) {
   const payload = await getData();
   return {

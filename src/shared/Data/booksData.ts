@@ -76,4 +76,11 @@ export const babasPickUp =
                 pageImage: ""
             },
         ]
+}
+
+export const books = [
+    {
+        name: "Baba's Pick up",
+        data: babasPickUp
     }
+]
