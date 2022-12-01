@@ -1,13 +1,15 @@
 .pageWrapper{
     overflow-x: hidden;
+    background-color: #FFF996;
 }
 
 .pageContent{
     padding-top: 48px;
     padding-left: 80px;
     padding-right: 80px;
+    padding-bottom: 40px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }

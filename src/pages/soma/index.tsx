@@ -15,10 +15,12 @@ const Soma: NextPage = () => {
       <Nav />
       <div className={styles.pageContent}>
         <SomaBookCard link="/soma/babas-pickup" bookName="Babas Pick Up" image={BabaPickUp} />
+        <SomaBookCard link="/soma/jebet" bookName="Jebet" image={Jebet} />
+        <SomaBookCard link="/soma/onyis" bookName="Mama Onyis" image={Onyis} />
       </div>
-      <div className={styles.loadMoreWrapper}>
+      {/* <div className={styles.loadMoreWrapper}>
         <Button variant="normal" text="LOAD MORE..." icon={false}></Button>
-      </div>
+      </div> */}
       <div className={styles.footer}>
         <Footer />
       </div>
