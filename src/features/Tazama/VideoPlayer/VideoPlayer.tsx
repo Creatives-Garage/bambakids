@@ -22,7 +22,7 @@ function VideoPlayer({data}: any){
   return (
     <div className={styles.componentWrapper}>
       <div className={styles.playerHeader}>
-        <button className={styles.buttonWrapper} onClick={()=> router.back()}></button>      
+        <button className={styles.buttonWrapper} onClick={()=> router.push("/")}></button>      
         <div className={styles.videoTitleGroup}>
           <h1>{data?.videoName}</h1>
           <h2>{data?.categoryName}</h2>
