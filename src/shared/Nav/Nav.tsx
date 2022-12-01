@@ -16,8 +16,6 @@ function Nav({payload}: any) {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
     setSearchForm(!searchForm);
-    
-    alert(`Search Test value ${searchValue}!`)
   }
 
     const options = {
@@ -37,6 +35,10 @@ function Nav({payload}: any) {
     const results = fuse.search(searchValue);
     setSearchResults(results);
     console.log("Results: ", results);
+  }
+
+  const handleTimeout = () =>{
+    setTimeout(()=>setResultsModal(!resultsModal), 2000);    
   }
 
   const router = useRouter();
@@ -80,7 +82,7 @@ function Nav({payload}: any) {
               type="text" 
               placeholder='Search Bamba Kids'
               onChange={handleSearch}
-              onBlur={()=> setTimeout(()=>setResultsModal(!resultsModal), 2000)}
+              onBlur={()=> {handleTimeout(); clearTimeout(handleTimeout)}}
             />
             <Button text="Search" variant="search" type="submit">
               <Image src="/icons/search.svg" alt="information" width={32} height={32}/>

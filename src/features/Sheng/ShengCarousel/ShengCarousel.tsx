@@ -22,7 +22,8 @@ const ShengCarousel = ({data}: any) => {
 
   return (
     <div className={styles.carouselContainer}>
-      <Slider {...settings}>
+      {/* <Slider {...settings}> */}
+      <Button variant='normal' text='Previous' action={()=>setImageIndex( imageIndex - 1)}/>
         { data?.map((item: shengDataType, index: number) =>
           (
             <div 
@@ -33,8 +34,8 @@ const ShengCarousel = ({data}: any) => {
             </div>
           )          
         )}
-      </Slider>
-      {imageIndex}
+      {/* </Slider> */}
+      <Button variant='normal' text='Next' action={()=> setImageIndex( imageIndex + 1)}/>
     </div>
   )
 }
