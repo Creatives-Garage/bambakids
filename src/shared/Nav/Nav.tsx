@@ -3,16 +3,40 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./Nav.module.scss";
 import Button from "../Button";
+import Fuse from "fuse.js";
+import Link from "next/link";
 
-function Nav() {
+function Nav({payload}: any) {
   const [searchValue, setSearchValue] = useState<string>("")
   const [searchForm, setSearchForm] = useState<boolean>(false);
   const [resultsModal, setResultsModal] = useState<boolean>(false);
-
+  const [searchResults, setSearchResults] = useState<any>([])
+  const [focus, setFocus] = useState(false);
+  
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
     e.preventDefault();
     setSearchForm(!searchForm);
+    
     alert(`Search Test value ${searchValue}!`)
+  }
+
+    const options = {
+    includeScore: true,
+    keys: [
+      {
+        name: "videoName",
+        weight: 0.9
+      },
+    ],
+  };
+  const fuse = new Fuse(payload, options);
+
+  function handleSearch (e:any){
+    setResultsModal(true); 
+    setSearchValue(e.target.value);
+    const results = fuse.search(searchValue);
+    setSearchResults(results);
+    console.log("Results: ", results);
   }
 
   const router = useRouter();
@@ -53,10 +77,10 @@ function Nav() {
             <input
               className={styles.searchInput}
               value={searchValue}
-              type="text"
+              type="text" 
               placeholder='Search Bamba Kids'
-              onChange={(e)=> {setResultsModal(true); setSearchValue(e.target.value)}}
-              onBlur={()=> {setResultsModal(false)}}
+              onChange={handleSearch}
+              onBlur={()=> setTimeout(()=>setResultsModal(!resultsModal), 2000)}
             />
             <Button text="Search" variant="search" type="submit">
               <Image src="/icons/search.svg" alt="information" width={32} height={32}/>
@@ -64,7 +88,23 @@ function Nav() {
           </form>
         
         { resultsModal &&
-          <div className={styles.resultsModal}>          
+          <div className={styles.resultsModal}>
+            {searchResults.length > 0 ? (
+                searchResults?.map((result: any, index: number) => (
+                  <div key={index}>
+                    <Link href={`/tazama/${result?.item.videoId}`} >
+                      <div className={styles.searchResult} >
+                        <div>
+                          <p>{result?.item.videoName}</p>
+                          <span>Category: {result?.item.categoryName}</span>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                ))
+              ) : (
+                <div className={styles.searchResult}>No results found</div>
+              )}          
           </div>
         }
         </div>

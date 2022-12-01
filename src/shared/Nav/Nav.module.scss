@@ -74,14 +74,48 @@
 
 .resultsModal{
     background-color: white;
-    height: 160px;
+    height: 300px;
+    overflow-y: scroll;
     width: 82%;
     align-self: center;
     justify-self: center;
-    border-radius: 16px;
+    border-radius: 16px 4px 4px 16px;
     margin-top: 8px;
+    z-index: 10;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .hiddenItem{
     display: none;
 }
+
+
+.searchResult {
+    cursor: pointer;
+    padding: 8px;
+    font-family: 'Nunito';
+    border-radius: 10px 0px 0px 10px;
+    z-index: 10;
+  
+    p {
+      color: #1c1c1c;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+  
+    span {
+      font-size: 14px;
+      color: #737373;
+    }
+  
+    &:hover {
+      background-color: #d219889f;
+      p{
+        color: #ffffff;
+      }
+      span{
+        color: #ffffff;
+      }
+    }
+  
+  }
