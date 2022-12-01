@@ -38,7 +38,7 @@ function Nav({payload}: any) {
   }
 
   const handleTimeout = () =>{
-    setTimeout(()=>setResultsModal(!resultsModal), 2000);    
+    setTimeout(()=>setResultsModal(!resultsModal), 1500);    
   }
 
   const router = useRouter();
@@ -82,7 +82,7 @@ function Nav({payload}: any) {
               type="text" 
               placeholder='Search Bamba Kids'
               onChange={handleSearch}
-              onBlur={()=> {handleTimeout(); clearTimeout(handleTimeout)}}
+              onBlur={()=> {handleTimeout()}}
             />
             <Button text="Search" variant="search" type="submit">
               <Image src="/icons/search.svg" alt="information" width={32} height={32}/>
