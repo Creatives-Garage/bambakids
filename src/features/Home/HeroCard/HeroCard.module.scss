@@ -35,4 +35,57 @@
             fill: #FFFBDF;
         }
     }
+
+    @media (max-width: 1000px) {
+        padding: 24px 40px;
+
+        h2{
+            font-size: 20px;
+        }
+
+        svg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    @media (max-width: 769px) {
+        padding: 16px 32px;
+
+        h2{
+            font-size: 20px;
+        }
+
+        svg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    @media (max-width: 648px) {
+        padding: 16px 32px;
+        width: 80%;
+        margin-bottom: 24px;
+
+        h2{
+            font-size: 20px;
+        }
+
+        svg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    @media (max-width: 426px) {
+        padding: 24px 32px;
+        width: 80%;
+        margin-bottom: 24px;
+
+        h2{
+            font-size: 20px;
+        }
+
+        svg{
+            width: 48px;
+            height: 48px;
+        }
+    }
 }

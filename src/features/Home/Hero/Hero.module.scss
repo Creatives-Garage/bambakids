@@ -35,12 +35,21 @@
             font-size: 24px;                
         }
     }
+
+    @media (max-width: 1057px) {
+      padding: 32px 32px;
+    }
 }
 
 .cardsWrapper{
     display: flex;
     justify-content: space-between;
     margin: 48px 0px 48px;
+
+    @media (max-width: 648px) {
+      flex-direction: column;
+      align-items: center;
+    }
 }
 
 .toggleBambaKidsSection{
