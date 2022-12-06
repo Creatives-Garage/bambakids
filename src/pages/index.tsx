@@ -24,7 +24,7 @@ const Home: NextPage = ({videos}: any) => {
   )
 }
 
-export default Home
+export default Home;
 
 async function getData() {
   const filePath = path.join(process.cwd(), 'src', 'shared', 'Data', 'tazamaData.json');

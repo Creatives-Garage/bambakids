@@ -37,8 +37,22 @@
     justify-content: space-around;
 
     @media (max-width: 726px) {
-        display: none;
+        position: absolute;
+        left: 20%;
+        top: 16%;
     }
+}
+
+.homeBtn{
+    @media (max-width: 631px) {
+        display: none
+    }    
+}
+
+.aboutUsBtn{
+    @media (max-width: 502px) {
+        display: none
+    }    
 }
 
 .navItemsCenter {
@@ -54,8 +68,8 @@
     @media (max-width: 726px) {
         width: 64px;
         height: 64px;
-        left: 10%;
-        top: 50%;
+        left: 5%;
+        top: 10%;
     }
 
     @media (max-width: 426px) {

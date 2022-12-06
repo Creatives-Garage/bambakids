@@ -39,6 +39,14 @@
     @media (max-width: 1057px) {
       padding: 32px 32px;
     }
+    @media (max-width: 650px) {
+      padding-top: 32px;
+      padding-bottom: 48px;
+      height: 1240px
+    }
+    @media (max-width: 426px) {
+      height: 1600px
+    }
 }
 
 .cardsWrapper{
@@ -47,6 +55,12 @@
     margin: 48px 0px 48px;
 
     @media (max-width: 648px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 426px) {
+      flex-wrap: nowrap;
       flex-direction: column;
       align-items: center;
     }

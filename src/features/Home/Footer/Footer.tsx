@@ -23,9 +23,9 @@ function Footer() {
         </div>
         <div className={styles.footerTextGroup}>
           <p>© 2022 Bamba Kids</p>
-          <p style={{marginRight: "8px", marginLeft: "8px"}}> | </p> 
+          <p style={{marginRight: "8px", marginLeft: "8px"}} className={styles.vline}> | </p> 
           <p>A Creatives Garage Production</p>
-          <p style={{marginRight: "8px", marginLeft: "8px"}}> | </p>
+          <p style={{marginRight: "8px", marginLeft: "8px"}} className={styles.vline}> | </p>
           <Link href="/privacy"><p className={styles.footerLink}>Privacy policy</p></Link>
         </div>
       </div>
