@@ -27,6 +27,11 @@ export const tazamaData: tazamaDataType = [
           videoName: "Being Tanu",
           thumbnail: "",
         },
+        {
+          videoId: "4",
+          videoName: "The Dancing Tribes of Kenya",
+          thumbnail: "",
+        },
       ]
     },
     {
@@ -34,9 +39,34 @@ export const tazamaData: tazamaDataType = [
       data: [
         {
           videoId: "5",
-          videoName: "Sakata Rhyme",
+          videoName: "Skamares",
           thumbnail: "",
-        }
+        },
+        {
+          videoId: "5",
+          videoName: "Yaya",
+          thumbnail: "",
+        },
+        {
+          videoId: "5",
+          videoName: "Watoto Wangu",
+          thumbnail: "",
+        },
+        {
+          videoId: "5",
+          videoName: "Ukuti wa mnazi",
+          thumbnail: "",
+        },
+        {
+          videoId: "5",
+          videoName: "Mabata Madogo",
+          thumbnail: "",
+        },
+        {
+          videoId: "5",
+          videoName: "Naskia Sauti",
+          thumbnail: "",
+        },
       ]
     },
 ];

@@ -9,9 +9,9 @@
         },
         {
             "videoId": "2",
+            "categoryName": "Stori Stori",
             "videoName": "Ayana the Makanga",
             "thumbnail": "",
-            "categoryName": "Stori Stori",
             "embedId": "et7HEDpsZEs"
         },
         {
@@ -29,11 +29,60 @@
             "embedId": "z9R-zVPckKg"
         },
         {
+            "videoId": "12",
+            "categoryName": "Hadithi TV",
+            "videoName": "The Dancing Tribes of Kenya",
+            "thumbnail": "",
+            "embedId": "z9R-zVPckKg"
+        },
+        {
             "videoId": "5",
             "categoryName": "Sakata Rhymes",
             "videoName": "Sakata Rhyme",
             "thumbnail": "",
             "embedId": "Tf6cnVcWdEg"
+        },
+        {
+            "videoId": "6",
+            "categoryName": "Sakata Rhymes",
+            "videoName": "Naskia Sauti",
+            "thumbnail": "",
+            "embedId": "IN_fKONiZ88"
+        },
+        {
+            "videoId": "7",
+            "categoryName": "Sakata Rhymes",
+            "videoName": "Mabata Madogo",
+            "thumbnail": "",
+            "embedId": "25FXbkE1h0Y"
+        },
+        {
+            "videoId": "8",
+            "categoryName": "Sakata Rhymes",
+            "videoName": "Ukuti wa Mnazi",
+            "thumbnail": "",
+            "embedId": "92lq2N8BL6s"
+        },
+        {
+            "videoId": "9",
+            "categoryName": "Sakata Rhymes",
+            "videoName": "Watoto Wangu",
+            "thumbnail": "",
+            "embedId": "CGHCpGubXu4"
+        },
+        {
+            "videoId": "10",
+            "categoryName": "Sakata Rhymes",
+            "videoName": "Yaya",
+            "thumbnail": "",
+            "embedId": "L-w69D67nMY"
+        },
+        {
+            "videoId": "11",
+            "categoryName": "Sakata Rhymes",
+            "videoName": "Skamares",
+            "thumbnail": "",
+            "embedId": "Lzx7gnbA-zM"
         }
     ]
 }
