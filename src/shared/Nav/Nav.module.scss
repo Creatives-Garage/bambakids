@@ -24,6 +24,12 @@
     @media (max-width: 726px) {
         padding: 8px 16px 2px;
     }
+
+    @media (max-width: 426px) {
+        position: fixed;
+        top: 0;
+        z-index: 21;
+    }
 }
 
 .navItems {
