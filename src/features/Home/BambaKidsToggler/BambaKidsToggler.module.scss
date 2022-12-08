@@ -28,7 +28,7 @@
   padding-right: 32px;
   padding-left: 32px;
   padding-bottom: 64px;
-  width: 70%;
+  width: 90%;
   position: relative;
   height: fit-content;
   transition: all 0.5s ease-in-out;
@@ -53,7 +53,7 @@
 .togglesContainer {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 80%;
 
   @media (max-width: 769px) {
     width: 45%;
@@ -71,13 +71,14 @@
 
 .togglerButton {
   cursor: pointer;
-  margin-right: 48px;
+  margin-right: 24px;
   border: solid 4px white;
   border-radius: 8px;
   background-color: white;
   width: fit-content;
   height: fit-content;
   margin-top: -64px;
+  transform: scale(70%);
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 726px) {
@@ -98,7 +99,7 @@
 }
 
 .active {
-  transform: scale(140%);
+  transform: scale(120%);
   border-bottom: #F6DB34 solid 4px;
   transition: all 0.5s ease-in-out;
 }
