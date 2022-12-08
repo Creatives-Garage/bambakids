@@ -1,14 +1,13 @@
-.pageWrapper{
+.pageWrapper {
     display: flex;
     justify-content: space-around;
-}
+    padding-top: 80px;
 
-.categoryCards{
-    width: 400px;
-    height: 200px;
-    background-color: gray;
-    padding: 24px 24px;
-    font-family: Bamba;
-    color: yellow;
-    font-size: 24px;    
+    @media (max-width: 769px) {
+        flex-wrap: wrap;       
+    }
+
+    @media (max-width: 426px) {
+        flex-direction: column;        
+    }
 }
