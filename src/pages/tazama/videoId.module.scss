@@ -3,11 +3,24 @@
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    @media (max-width: 476px) {
+        padding-top: 96px; 
+    }
 }
 
 .videoPlayerWrapper{
     display: flex;
     padding: 48px 72px;
+
+    @media (max-width: 1025px) {
+        padding: 48px 24px;
+    }
+    @media (max-width: 689px) {
+        flex-direction: column;
+    }
+    @media (max-width: 476px) {
+        padding: 0px 16px; 
+    }
 }
 
 .suggestedVideosWrapper{
@@ -16,6 +29,11 @@
     background: #B0C3FF;
     overflow-y: scroll;
     height: 367px;
+    @media (max-width: 689px) {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        height: 240px;
+    }
 }
 
 .suggestedVideos{
@@ -24,10 +42,20 @@
     flex-direction: column;
     align-items: center;
     padding: 24px;
+    @media (max-width: 689px) {
+        flex-direction: row; 
+    }    
 }
 
 .suggestedVideo{
     width: 200px;
+    @media (max-width: 476px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 320px;
+        width: 240px;
+        margin-right: 8px; 
+    }
 }
 
 .video{
@@ -36,6 +64,10 @@
     background-color: black;
     border: solid white 8px;
     margin-top: 20px;
+
+    @media (max-width: 476px) {
+        margin-top: 12px;
+    }
 }
 
 .suggestedVideoTitle{
