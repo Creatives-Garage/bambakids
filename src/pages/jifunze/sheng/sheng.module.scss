@@ -1,0 +1,42 @@
+
+.navigationHeader{
+    background-color: #FFF66B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 132px;
+    padding-top: 32px;
+    padding-bottom: 0px;
+}
+
+.backbutton{
+    width: 80px;
+    height: 60px;
+    background-image: url("../../../../public/icons/back.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    transition: all ease-in-out 0.5s;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-top: 10px;
+    font: Nunito;
+    font-weight: 700;
+    color: white;
+
+    &:hover{
+        transform: translateY(-10%);
+    }
+}
+
+.contentTitle{
+    font-size: 16px;
+    text-align: center;
+    font-family: Bamba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
