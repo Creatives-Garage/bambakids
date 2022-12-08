@@ -24,6 +24,15 @@
     height: 200px;
     width: 200px;
     background-size: contain;
+
+    @media (max-width: 426px) {
+        height: 160px;
+        width: 160px;
+    }
+    @media (max-width: 376px) {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .descriptionBox {
@@ -36,6 +45,10 @@
     padding: 8px;
     font-family: Bamba;
     font-size: 20px;
+
+    @media (max-width: 426px) {
+        font-size: 16px;
+    }
 }
 
 .playIconWrapper {
@@ -52,6 +65,11 @@
     height: 72px;
     visibility: hidden;
     transition: all 0.5s ease-in-out;
+
+    @media (max-width: 376px) {
+        width: 56px;
+        height: 56px;
+    }
 }
 
 .playIcon {}
