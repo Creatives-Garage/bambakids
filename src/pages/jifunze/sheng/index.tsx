@@ -13,7 +13,7 @@ const Sheng: NextPage = () => {
       <Nav />
       <div className={styles.pageContent}>
         <div className={styles.navigationHeader}>
-          <button className={styles.backbutton} onClick={()=> router.push("/soma")}> Back </button>
+          <button className={styles.backbutton} onClick={()=> router.push("/jifunze/")}> Back </button>
           <div className={styles.contentTitle}>
             <h2>Learn Sheng&apos;</h2>
           </div>
