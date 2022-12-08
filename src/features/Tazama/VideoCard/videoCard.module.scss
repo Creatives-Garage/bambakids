@@ -3,8 +3,11 @@
     border: solid 6px #D21987;
     background-color: #D21987;
     border-radius: 8px;
+    margin-top: 24px;
+    margin-right: 0px;
     width: fit-content;
     height: fit-content;
+    z-index: 0;
     cursor: pointer;
 
     &:hover {
