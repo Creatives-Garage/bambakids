@@ -1,0 +1,35 @@
+.categoryCards {
+    width: 400px;
+    height: 240px;
+    background-color: #27277e;
+    padding: 24px 24px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    cursor: grab;
+
+    h2 {
+        font-family: Bamba;
+        color: yellow;
+        font-size: 24px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    p{
+        font-family: nunito;
+        color: rgb(235, 235, 235);
+        bottom: -10px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &:hover{
+        background-color: #D21987;
+        box-shadow: 16px 16px 0px #08084e;
+        h2{
+            color: #FFFBDF;
+        }
+        p, h2{
+            transform: scale(105%);
+        }
+    }
+}
