@@ -64,6 +64,7 @@ const Page1 = () => {
         </motion.div>
       </div>
       <div className={styles.buttonsContainer}>
+        <Button variant="normal" text="Books Page" action={()=> router.push("/soma/")}></Button>
         <Button variant="normal" text="Previous Page" action={()=> router.push("/soma/babas-pickup/")}></Button>
         <Button variant="normal" text="Next Page" action={()=> router.push("/soma/babas-pickup/page2")}></Button>
       </div>

@@ -61,12 +61,13 @@ const Page2 = () => {
   return (
     <div className={styles.page2Container}>
       <div className={styles.buttonsContainer}>
+        <Button variant="normal" text="Books Page" action={()=> router.push("/soma/")}></Button>
         <Button variant="normal" text="Previous Page" action={()=> router.push("/soma/babas-pickup/page2")}></Button>
         <Button variant="normal" text="Next Page" action={()=> router.push("/soma/babas-pickup/page4")}></Button>
       </div>
       <div className={styles.sections}>
         <div className={styles.sectionLeft}>
-          <div className={styles.page3ContentContainer}>
+          <div className={styles.page3ContentContainerLeft}>
             <motion.div 
               variants={!shouldReduceMotion ? imageVariants : null}
               initial="in"

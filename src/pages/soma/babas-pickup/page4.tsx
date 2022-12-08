@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from "next/router";
 import styles from "./babas-pickup.module.scss";
 import { babasPickUp } from '../../../shared/Data/booksData';
-import page5Image from "../../../../public/photos/books/BabasPickUp/6.jpeg";
+import page5Image from "../../../../public/photos/books/BabasPickUp/7.jpeg";
 import Image from 'next/image';
 import Button from '../../../shared/Button';
 import {motion, useReducedMotion} from "framer-motion"

@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from "next/router";
 import styles from "./babas-pickup.module.scss";
 import { babasPickUp } from '../../../shared/Data/booksData';
-import page6Image from "../../../../public/photos/books/BabasPickUp/7.jpeg";
+import page6Image from "../../../../public/photos/books/BabasPickUp/8.jpeg";
 import Image from 'next/image';
 import Button from '../../../shared/Button';
 import {motion, useReducedMotion} from "framer-motion"
@@ -20,8 +20,8 @@ const Page2 = () => {
         <div className={styles.page5ImageWrapper}>
           <Image src={page6Image} width={440} height={540} alt="Baba pick up" />
         </div>        
-        <p className={styles["page2Description"] + " " + styles["text"]}>
-          {babasPickUp.pagesData[5].pageDescription}
+        <p className={styles["page5Description"] + " " + styles["text"]}>
+          {babasPickUp.pagesData[6].pageDescription}
         </p>        
       </div>
     </div>

@@ -47,6 +47,7 @@ const Page2 = () => {
   return (
     <div className={styles.page2Container}>
       <div className={styles.buttonsContainer}>
+        <Button variant="normal" text="Books Page" action={()=> router.push("/soma/")}></Button>
         <Button variant="normal" text="Previous Page" action={()=> router.push("/soma/babas-pickup/page1")}></Button>
         <Button variant="normal" text="Next Page" action={()=> router.push("/soma/babas-pickup/page3")}></Button>
       </div>

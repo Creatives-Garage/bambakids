@@ -13,15 +13,15 @@ const Page2 = () => {
   return (
     <div className={styles.page2Container}>
       <div className={styles.buttonsContainer}>
-        <Button variant="normal" text="Previous Page" action={()=> router.push("/soma/babas-pickup/page6")}></Button>
-        <Button variant="normal" text="Next Page" action={()=> router.push("/soma/babas-pickup/page8")}></Button>
+        <Button variant="normal" text="Previous Page" action={()=> router.push("/soma/babas-pickup/page7")}></Button>
+        <Button variant="normal" text="Read More Books" action={()=> router.push("/soma/")}></Button>
       </div>
       <div className={styles.page5ContentContainer}>
         <div className={styles.page5ImageWrapper}>
           <Image src={page9Image} width={440} height={540} alt="Baba pick up" />
         </div>        
         <p className={styles["page2Description"] + " " + styles["text"]}>
-          {babasPickUp.pagesData[10].pageDescription}
+          {babasPickUp.pagesData[9].pageDescription}
         </p>        
       </div>
     </div>

@@ -67,11 +67,6 @@ export const babasPickUp =
             },
             {
                 pageTitle: "",
-                pageDescription: "We especially loved driving through Zakayo's farm that seemed to always have mango trees full of ripe, yummy fruit.",
-                pageImage: ""
-            },
-            {
-                pageTitle: "",
                 pageDescription: "Baba's no longer here, and it has been years since we threw up dust clouds in Ukambani but my memories of our life on his pick up live on.",
                 pageImage: ""
             },
