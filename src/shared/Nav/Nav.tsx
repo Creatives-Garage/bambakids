@@ -113,18 +113,16 @@ function Nav({ payload }: any) {
         }
       >
         <div className={styles.searchForm}>
-          <form onSubmit={(e) => handleSubmit(e)}>
-            <input
-              className={styles.searchInput}
-              value={searchValue}
-              type="text"
-              placeholder="Search Bamba Kids"
-              onChange={handleSearch}
-              onBlur={() =>
-                setTimeout(() => setResultsModal(!resultsModal), 2000)
-              }
-            />
-          </form>
+          <input
+            className={styles.searchInput}
+            value={searchValue}
+            type="text"
+            placeholder="Search Bamba Kids"
+            onChange={handleSearch}
+            onBlur={() =>
+              setTimeout(() => setResultsModal(!resultsModal), 2000)
+            }
+          />
           <div onClick={() => setSearchForm(false)}>
             <Button variant="search">
               <Image
