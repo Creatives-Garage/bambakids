@@ -1,11 +1,18 @@
 import React from "react";
-import ShengCarousel from "../../features/Sheng/ShengCarousel";
-import { shengData } from "../../shared/Data/shengData";
+import styles from "./jifunze.module.scss"
 
 export default function Jifunze(){
     return(
-        <>
-          <ShengCarousel data={shengData} />
-        </>
+        <div className={styles.pageWrapper}>
+          <div className={styles.categoryCards}>
+            Let&apos;s Speak Sheng
+          </div>
+          <div className={styles.categoryCards}>
+            Proverbs/Methali
+          </div>
+          <div className={styles.categoryCards}>
+            Did you know?
+          </div>
+        </div>
     )
 }

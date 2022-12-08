@@ -1,0 +1,14 @@
+.pageWrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.categoryCards{
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    padding: 24px 24px;
+    font-family: Bamba;
+    color: yellow;
+    font-size: 24px;    
+}
