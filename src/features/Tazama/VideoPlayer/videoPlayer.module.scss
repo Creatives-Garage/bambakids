@@ -1,5 +1,9 @@
 .componentWrapper{
     width: 70%;
+
+    @media (max-width: 689px) {
+        width: 100%;
+    }
 }
 
 .playerHeader{
@@ -27,6 +31,11 @@
         transform: translateY(-10%);
         z-index: 0;
     }
+
+    @media (max-width: 476px) {
+      width: 45px;
+      height: 40px; 
+    }
 }
 
 .videoTitleGroup{
@@ -39,6 +48,11 @@
         line-height: 0;
         margin-bottom: 30px;
         margin-top: 20px;
+        
+        @media (max-width: 476px) {
+            font-size: 14px;
+            font-weight: 700;
+        }
     }
 
     h2{
@@ -51,9 +65,7 @@
 
 .playerWrapper{
   background-color: #003e77;
-    // width: 100%;
-
-    
+  // width: 100%;    
 }
 
 .videoControls{
