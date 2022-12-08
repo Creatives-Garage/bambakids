@@ -7,7 +7,7 @@ import Footer from '../features/Home/Footer'
 import Hero from '../features/Home/Hero'
 import Button from '../shared/Button'
 import Nav from '../shared/Nav'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import path from 'path';
 import fs from 'fs/promises';
 
