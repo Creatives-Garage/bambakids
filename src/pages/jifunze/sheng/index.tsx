@@ -9,7 +9,7 @@ import { shengData } from "../../../shared/Data/shengData";
 const Sheng: NextPage = () => {
   const router = useRouter()
   return (
-    <div>
+    <div className={styles.page}>
       <Nav />
       <div className={styles.pageContent}>
         <div className={styles.navigationHeader}>

@@ -7,6 +7,7 @@ import { typeShengData, shengDataType } from "../../../shared/Data/shengData";
 
 const ShengCarousel = ({ data }: any) => {
   const [imageIndex, setImageIndex] = useState(0);
+  const length = data?.length;
 
   const settings: any = {
     infinite: true,
@@ -35,22 +36,6 @@ const ShengCarousel = ({ data }: any) => {
   return (
     <div className={styles.carouselContainer}>
       {/* <Slider {...settings}> */}
-      <div className={styles.buttonContainer}>
-        <Button
-          variant="normal"
-          text="Previous"
-          action={() =>
-            imageIndex >= 1 ? setImageIndex(imageIndex - 1) : setImageIndex(2)
-          }
-        />
-        <Button
-          variant="normal"
-          text="Next"
-          action={() =>
-            imageIndex <= 1 ? setImageIndex(imageIndex + 1) : setImageIndex(0)
-          }
-        />
-      </div>
       <div className={styles.cardsWrapper}>
         {data?.map((item: shengDataType, index: number) => (
           <div
@@ -69,6 +54,22 @@ const ShengCarousel = ({ data }: any) => {
             />
           </div>
         ))}
+      </div>
+      <div className={styles.buttonContainer}>
+        <Button
+          variant="normal"
+          text="Previous"
+          action={() =>
+            imageIndex >= 1 ? setImageIndex(imageIndex - 1) : setImageIndex(length-1)
+          }
+        />
+        <Button
+          variant="normal"
+          text="Next"
+          action={() =>
+            imageIndex <= length-1 ? setImageIndex(imageIndex + 1) : setImageIndex(0)
+          }
+        />
       </div>
       {/* </Slider> */}
     </div>

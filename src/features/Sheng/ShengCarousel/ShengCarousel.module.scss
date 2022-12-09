@@ -9,13 +9,14 @@
 
 .cardsWrapper{
     display: flex;
-    padding-top: 24px;
+    padding-top: 48px;
+    padding-bottom: 44px;
 }
 
 .carouselCard{
     margin: 0;
     opacity: 0.5;
-    transform: scale(70%);
+    transform: scale(80%);
     transition: all 0.5s ease-in-out;
 
     &:hover{
@@ -25,7 +26,7 @@
 
 .activeCard{
     opacity: 1;
-    transform: scale(100%);
+    transform: scale(120%);
     transition: all 0.5s ease-in-out;
 }
 
