@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./privacy.module.scss";
 import Nav from "../../shared/Nav";
+import path from 'path';
+import fs from 'fs/promises';
 
 const Privacy = () => {
   return (
@@ -579,3 +581,20 @@ const Privacy = () => {
 };
 
 export default Privacy;
+
+async function getData() {
+  const filePath = path.join(process.cwd(), 'src', 'shared', 'Data', 'tazamaData.json');
+  const jsonData = await fs.readFile(filePath);
+  const data = JSON.parse(jsonData.toString());
+
+  return data;
+}
+
+export async function getServerSideProps(context: any) {
+  const payload = await getData();
+  return {
+    props: {
+      videos: payload,
+    },
+  };
+}

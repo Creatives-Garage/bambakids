@@ -15,12 +15,12 @@ export const shengData: typeShengData = [
     //     translation: "Ten Shillings",
     //     image: kinde
     // },
-    {
-        image: odi
-    },
-    {
-        image: kanja
-    },
+    // {
+    //     image: odi
+    // },
+    // {
+    //     image: kanja
+    // },
     {
         image: manga
     },

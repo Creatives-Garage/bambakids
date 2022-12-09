@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {motion} from "framer-motion"
 import HeroCard from "../HeroCard";
 import styles from "./Hero.module.scss";
 

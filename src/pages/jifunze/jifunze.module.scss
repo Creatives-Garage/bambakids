@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-around;
     padding-top: 80px;
+    background-color: #FFF996;
+    height: 85vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     @media (max-width: 769px) {
         flex-wrap: wrap;       

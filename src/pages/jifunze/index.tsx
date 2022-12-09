@@ -2,11 +2,14 @@ import React from "react";
 import JifunzeCard from "../../features/Jifunze/JifunzeCard";
 import Nav from "../../shared/Nav";
 import styles from "./jifunze.module.scss";
+import path from 'path';
+import fs from 'fs/promises';
 
-export default function Jifunze() {
+export default function Jifunze({videos}: any) {
+  const payload = videos?.videos;
   return (
     <div className={styles.page}>
-      <Nav />
+      <Nav payload={payload}/>
       <div className={styles.pageWrapper}>
         <JifunzeCard
           title="Let's Speak Sheng"
@@ -26,4 +29,21 @@ export default function Jifunze() {
       </div>
     </div>
   );
+}
+
+async function getData() {
+  const filePath = path.join(process.cwd(), 'src', 'shared', 'Data', 'tazamaData.json');
+  const jsonData = await fs.readFile(filePath);
+  const data = JSON.parse(jsonData.toString());
+
+  return data;
+}
+
+export async function getServerSideProps(context: any) {
+  const payload = await getData();
+  return {
+    props: {
+      videos: payload,
+    },
+  };
 }

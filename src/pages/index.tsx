@@ -30,7 +30,6 @@ async function getData() {
   const filePath = path.join(process.cwd(), 'src', 'shared', 'Data', 'tazamaData.json');
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData.toString());
-
   return data;
 }
 
