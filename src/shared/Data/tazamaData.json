@@ -1,46 +1,11 @@
 {
     "videos": [
         {
-            "videoId": "1",
-            "categoryName": "Hadithi TV",
-            "videoName": "Kwame the Girraffe",
-            "thumbnail": "",
-            "embedId": "E2WwzObvP74"
-        },
-        {
-            "videoId": "2",
-            "categoryName": "Stori Stori",
-            "videoName": "Ayana the Makanga",
-            "thumbnail": "",
-            "embedId": "et7HEDpsZEs"
-        },
-        {
-            "videoId": "3",
-            "categoryName": "Hadithi TV",
-            "videoName": "Mama Onyis",
-            "thumbnail": "",
-            "embedId": "qr6r4w_RC7I"
-        },
-        {
-            "videoId": "4",
-            "categoryName": "Hadithi TV",
-            "videoName": "Being Tanu",
-            "thumbnail": "",
-            "embedId": "z9R-zVPckKg"
-        },
-        {
-            "videoId": "12",
-            "categoryName": "Hadithi TV",
-            "videoName": "The Dancing Tribes of Kenya",
-            "thumbnail": "",
-            "embedId": "z9R-zVPckKg"
-        },
-        {
             "videoId": "5",
             "categoryName": "Sakata Rhymes",
-            "videoName": "Sakata Rhyme",
+            "videoName": "Skamares",
             "thumbnail": "",
-            "embedId": "Tf6cnVcWdEg"
+            "embedId": "Lzx7gnbA-zM"
         },
         {
             "videoId": "6",
@@ -78,11 +43,39 @@
             "embedId": "L-w69D67nMY"
         },
         {
-            "videoId": "11",
-            "categoryName": "Sakata Rhymes",
-            "videoName": "Skamares",
+            "videoId": "1",
+            "categoryName": "Hadithi TV",
+            "videoName": "Kwame the Girraffe",
             "thumbnail": "",
-            "embedId": "Lzx7gnbA-zM"
+            "embedId": "E2WwzObvP74"
+        },
+        {
+            "videoId": "2",
+            "categoryName": "Stori Stori",
+            "videoName": "Ayana the Makanga",
+            "thumbnail": "",
+            "embedId": "et7HEDpsZEs"
+        },
+        {
+            "videoId": "3",
+            "categoryName": "Hadithi TV",
+            "videoName": "Mama Onyis",
+            "thumbnail": "",
+            "embedId": "qr6r4w_RC7I"
+        },
+        {
+            "videoId": "4",
+            "categoryName": "Hadithi TV",
+            "videoName": "Being Tanu",
+            "thumbnail": "",
+            "embedId": "z9R-zVPckKg"
+        },
+        {
+            "videoId": "12",
+            "categoryName": "Hadithi TV",
+            "videoName": "The Dancing Tribes of Kenya",
+            "thumbnail": "",
+            "embedId": "z9R-zVPckKg"
         }
     ]
 }
