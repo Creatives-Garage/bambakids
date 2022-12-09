@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./Nav.module.scss";
 import Button from "../Button";
-// import Fuse from "fuse.js";
+import Fuse from "fuse.js";
 import Link from "next/link";
 
 function Nav({ payload }: any) {
@@ -30,13 +30,13 @@ function Nav({ payload }: any) {
       },
     ],
   };
-  // const fuse = new Fuse(payload, options);
+  const fuse = new Fuse(payload, options);
 
   function handleSearch(e: any) {
     setResultsModal(true);
     setSearchValue(e.target.value);
-    // const results = fuse.search(searchValue);
-    // setSearchResults(results);
+    const results = fuse.search(searchValue);
+    setSearchResults(results);
     // console.log("Results: ", results);
   }
 
@@ -126,7 +126,7 @@ function Nav({ payload }: any) {
           <div onClick={() => setSearchForm(false)}>
             <Button variant="search">
               <Image
-                src="/icons/search.svg"
+                src="/icons/close.svg"
                 alt="information"
                 width={32}
                 height={32}
