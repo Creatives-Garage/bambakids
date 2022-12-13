@@ -8,14 +8,14 @@ interface ShengCardProps {
   image: StaticImageData,
 }
 
-const ShengCard = ({sheng, translation, image}: ShengCardProps) => {
+const CarouselCard = ({sheng, translation, image}: ShengCardProps) => {
   return (
     <div className={styles.cardContainer}>
       <h2>{sheng}</h2>
-      <Image src={image} alt={translation} width={280} height={420}/>
+      <Image src={image} alt={translation} width={280} height={480}/>
       <h3>{translation}</h3>
     </div>
   );
 }
 
-export default ShengCard;
+export default CarouselCard;
