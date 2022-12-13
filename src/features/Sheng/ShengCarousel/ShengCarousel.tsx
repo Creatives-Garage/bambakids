@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Button from "../../../shared/Button";
-import Slider from "react-slick";
 import ShengCard from "../ShengCard";
 import styles from "./ShengCarousel.module.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import { typeShengData, shengDataType } from "../../../shared/Data/shengData";
 
 const ShengCarousel = ({ data }: any) => {
@@ -35,16 +36,21 @@ const ShengCarousel = ({ data }: any) => {
 
   return (
     <div className={styles.carouselContainer}>
-      {/* <Slider {...settings}> */}
-      <div className={styles.cardsWrapper}>
+      <Carousel 
+        autoFocus={true} 
+        centerMode={true} 
+        width={"400px"}
+        showStatus={false}
+      >
         {data?.map((item: shengDataType, index: number) => (
           <div
             key={index}
-            className={
-              index === imageIndex
-                ? styles["carouselCard"] + " " + styles["activeCard"]
-                : styles["carouselCard"]
-            }
+            // className={
+            //   index === imageIndex
+            //     ? styles["carouselCard"] + " " + styles["activeCard"]
+            //     : styles["carouselCard"]
+            // }
+            className={styles.carouselCard}
             onClick={() => setImageIndex(index)}
           >
             <ShengCard
@@ -54,24 +60,7 @@ const ShengCarousel = ({ data }: any) => {
             />
           </div>
         ))}
-      </div>
-      <div className={styles.buttonContainer}>
-        <Button
-          variant="normal"
-          text="Previous"
-          action={() =>
-            imageIndex >= 1 ? setImageIndex(imageIndex - 1) : setImageIndex(length-1)
-          }
-        />
-        <Button
-          variant="normal"
-          text="Next"
-          action={() =>
-            imageIndex <= length-1 ? setImageIndex(imageIndex + 1) : setImageIndex(0)
-          }
-        />
-      </div>
-      {/* </Slider> */}
+      </Carousel>
     </div>
   );
 };

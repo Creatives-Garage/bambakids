@@ -10,17 +10,6 @@ import mzing from "../../../public/photos/sheng/mzing.png";
 import ndai from "../../../public/photos/sheng/ndai.png";
 
 export const shengData: typeShengData = [
-    // {
-    //     name: "Kinde",
-    //     translation: "Ten Shillings",
-    //     image: kinde
-    // },
-    // {
-    //     image: odi
-    // },
-    // {
-    //     image: kanja
-    // },
     {
         image: manga
     },
