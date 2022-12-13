@@ -6,12 +6,11 @@ import dawa from "../../../public/photos/proverbs/dawa-ya-moto.png";
 import fimbo from "../../../public/photos/proverbs/fimboa-ya-mbali.png";
 import kidole from "../../../public/photos/proverbs/kidole-kimoja.png";
 import kwenda from "../../../public/photos/proverbs/kwenda-mbio.png";
-import maji from "../../../public/photos/proverbs/maji-yakimwagika(1).png";
+import maji from "../../../public/photos/proverbs/maji-yakimwagika.png";
 import dua from "../../../public/photos/proverbs/dua-la-kuku.png";
 import mchagua from "../../../public/photos/proverbs/mchagua-jembe.png";
 import mchumia from "../../../public/photos/proverbs/mchumia-juani.png";
 import mgeni from "../../../public/photos/proverbs/mgeni-njoo.png";
-import mtu from "../../../public/photos/proverbs/mtu-hujulikana.png";
 import njia from "../../../public/photos/proverbs/njia-mbili.png";
 import nyuki from "../../../public/photos/proverbs/nyuki-huenda-na-maua-yake.png";
 import usimwamshe from "../../../public/photos/proverbs/usimwamshe-aliyelala.png";
@@ -37,9 +36,6 @@ export const proverbsData = [
     },
     {
         image: mgeni
-    },
-    {
-        image: mtu
     },
     {
         image: njia
