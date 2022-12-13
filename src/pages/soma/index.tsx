@@ -17,9 +17,9 @@ const Soma: NextPage = () => {
         <SomaBookCard link="/soma/babas-pickup" bookName="Babas Pick Up" image={BabaPickUp} />
         <SomaBookCard link="/soma/jebet-the-runner" bookName="Jebet - The Runner" image={Jebet} />
       </div>
-      <div className={styles.loadMoreWrapper}>
+      {/* <div className={styles.loadMoreWrapper}>
         <Button variant="normal" text="LOAD MORE..." icon={false}></Button>
-      </div>
+      </div> */}
       <div className={styles.footer}>
         <Footer />
       </div>
