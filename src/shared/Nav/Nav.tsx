@@ -61,7 +61,12 @@ function Nav({ payload }: any) {
             </Button>
           </div>
           <div className={styles.aboutUsBtn}>
-            <Button text="About us" variant="normal" icon>
+            <Button 
+              text="About us" 
+              variant="normal" 
+              icon
+              action={() => router.push("/about")}  
+            >
               <Image
                 src="/icons/information.svg"
                 alt="information"

@@ -1,19 +1,20 @@
 .PageWrapper{
     overflow-x: hidden;
-    padding-top: 72px;
+    padding-top: 80px;
 }
 
 .pageContent{
     position: relative;
     display: flex;
     padding: 48px 132px;
+    flex-direction: column;
 
     h1,h2,h3{
-        font-family:Helvetica, sans-serif;
+        font-family: Bamba;
         color:#0e2332;
     }
     p, li{
-        line-height: 28px;
+        line-height: 24px;
         color:#6e7b84;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -22,26 +23,31 @@
     }
 }
 
-.right{
-    width: 70%;
-}
-
-.left{
-    position: fixed;
-    right: 5%;
-    top: 20%;
-    width: 20%;
-}
-
-.hr{
-    position: fixed;
-    right: 30%;
-    top: 20%;
-    height: 400px;
-}
-
 .NavWrapper{
     position: fixed;
     top: 0;
     z-index: 3;
+}
+
+.images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    grid-gap: 24px;
+    padding-left: 72px;
+    padding-right: 132px;
+}
+
+.imageCard{
+    border: solid #0259AA 8px;
+    border-radius: 8px 8px 0px 0px;
+    min-width: fit-content;
+    max-height: 480px;    
+}
+
+.caption{
+    font-family: Nunito;
+    font-size: 16px;
+    text-overflow: clip;
+    padding: 8px;
 }
