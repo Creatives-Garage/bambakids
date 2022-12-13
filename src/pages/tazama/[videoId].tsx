@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 import path from 'path';
 import fs from 'fs/promises';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function VideoName({videos}: any) {
   const videoData = videos.videos;  
@@ -35,7 +36,9 @@ export default function VideoName({videos}: any) {
                 <div key={index}>
                   <Link href={`/tazama/${item.videoId}`}>
                     <div className={styles.suggestedVideo}>
-                      <div className={styles.video}></div>
+                      <div className={styles.video}>
+                        <Image src={item?.thumbnail} alt={item.videoName} height={100} width={200}/>
+                      </div>
                       <div className={styles.suggestedVideoTitle}>{item.videoName}</div>
                     </div>
                   </Link>

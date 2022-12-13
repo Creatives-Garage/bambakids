@@ -5,7 +5,7 @@ export const tazamaData: tazamaDataType = [
         {
           videoId: "1",
           videoName: "Kwame the Girraffe",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/kwame.jpg",
         }
       ]
     },
@@ -15,22 +15,22 @@ export const tazamaData: tazamaDataType = [
         {
           videoId: "2",
           videoName: "Ayana the Makanga",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/ayanna.png",
         },
         {
           videoId: "3",
           videoName: "Mama Onyis",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/mama_onyis_cover.png",
         },
         {
           videoId: "4",
           videoName: "Being Tanu",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/tanu.png",
         },
         {
           videoId: "4",
           videoName: "The Dancing Tribes of Kenya",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/maua_dancing_tribes.jpg",
         },
       ]
     },
@@ -40,32 +40,32 @@ export const tazamaData: tazamaDataType = [
         {
           videoId: "5",
           videoName: "Skamares",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/skamarees.png",
         },
         {
           videoId: "5",
           videoName: "Yaya",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/yaya1.png",
         },
         {
           videoId: "5",
           videoName: "Watoto Wangu",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/watoto.png",
         },
         {
           videoId: "5",
           videoName: "Ukuti wa mnazi",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/ukuti.png",
         },
         {
           videoId: "5",
           videoName: "Mabata Madogo",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/mabata.png",
         },
         {
           videoId: "5",
           videoName: "Naskia Sauti",
-          thumbnail: "",
+          thumbnail: "https://www.bambaapp.creativesgarage.org/public/assets/videos_images/naskiasauti.jpg",
         },
       ]
     },

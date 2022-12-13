@@ -12,7 +12,8 @@ import Nav from '../../shared/Nav';
 import Footer from '../../../public/icons/footer.svg';
 import {tazamaData} from '../../shared/Data/tazamaData';
 
-const Videos: NextPage = ({data}: any) => {    
+const Videos: NextPage = ({data}: any) => {
+    console.log("videosss",data?.videos)    
     return (
       <div className={styles.container}>
         <Nav/>
