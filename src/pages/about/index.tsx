@@ -71,7 +71,6 @@ const Privacy = ({ feed, videoPayload }: any) => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
