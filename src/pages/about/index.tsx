@@ -40,7 +40,7 @@ const Privacy = ({ feed, videoPayload }: any) => {
       </div>
       <div className={styles.pageContent}>
         <div className={styles.left}>
-          <h1 style={{ textAlign: "center" }}> About </h1>
+          <h1 style={{ textAlign: "center", }}> About </h1>
           <p style={{ textAlign: "center", fontWeight: "bold" }}> Play. Watch. Learn</p>
           <p> Bamba Kids is an interactive edutainment app created for kids aged 3-10 years old. On it. children can learn facts about the world around them, watch and read entertaining stories and play games!</p>
         </div>
