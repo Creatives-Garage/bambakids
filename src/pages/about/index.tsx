@@ -13,7 +13,7 @@ async function getData() {
   return data;
 }
 
-export const getStaticProps = async (context: any) => {
+export const getServerSideProps = async (context: any) => {
   const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,timestamp,permalink,username&access_token=${process.env.INSTAGRAM}`;
   const data = await fetch(url);
   const feed = await data.json();
