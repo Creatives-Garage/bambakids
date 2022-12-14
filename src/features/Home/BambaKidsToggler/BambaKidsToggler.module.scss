@@ -169,20 +169,12 @@
 }
 
 .photo {
-  position: absolute;
-  z-index: 1;
   border-radius: 8px;
-  transform: rotate(-18deg);
   box-shadow: rgba(39, 39, 39, 0.25);
   transition: all 0.5s ease-in-out;
   width: fit-content;
   height: fit-content;
-}
-
-.activePhoto {
-  z-index: 2;
-  transform: rotate(-2deg);
-
+  transform: scale(90%) translateY(40px);
   @media (max-width: 769px) {
     width: 160px;
     height: 160px;

@@ -7,8 +7,8 @@ const charactersData = [
     name: "Trufena",
     description:
       "Misadventures of Trufena is a book that tells the story of Trufena and her mum in the farm. Trufena likes her mom's chicken served with delicious chapatis. Trufena's need to have chicken for dinner makes her take the initiative to catch a chicken in the farm, running around in hot pursuit. Will she succeed in capturing the chicken?",
-    headshot: "/characters/nambi-headshot.png",
-    fullpic: "/characters/nambi-full.png",
+    headshot: "/characters/truphena-headshot.png",
+    fullpic: "/characters/truephena-fullpic.png",
   },
   {
     name: "Jebet",
@@ -20,8 +20,8 @@ const charactersData = [
   {
     name: "Tanu",
     description: "I'm different, but what if I wasn't? I think life would be dull and stars would be null... Being Tanu is the story of a young girl named Tanu, growing up with people and animals that are different from her. That doesn't faze her, she instead explores the differences while exploring her own uniqueness.",
-    headshot: "/characters/koki-headshot.png",
-    fullpic: "/characters/koki-fullpic.png",
+    headshot: "/characters/tanu-headshot.png",
+    fullpic: "/characters/tanu-fullpic.png",
   },
   {
     name: "Ayanna",
@@ -32,13 +32,14 @@ const charactersData = [
   {
     name: "Kwame",
     description: "Kwame is a giraffe who stands tall and is completely sure of himself. He sees himself as a lion though, brave and magnificent. Although his friends laugh and his enemies look at him with scorn, he stays true to himself and he ends up helping the whole savannah. Beyond having a beautiful message on self love,  Kwame the Giraffe paints a picture of the savannah and other facets of Kenya that makes it a beautiful country.",
-    headshot: "/characters/koki-headshot.png",
-    fullpic: "/characters/koki-fullpic.png",
+    headshot: "/characters/kwame-headshot.png",
+    fullpic: "/characters/kwame-fullpic.png",
   },
 ];
 
 function BambaKidsToggler() {
   const [activeCharacter, setActiveCharacter] = useState(0);
+  console.log(activeCharacter)
   function showTrufena() {
     setActiveCharacter(0);
   }
@@ -142,75 +143,15 @@ function BambaKidsToggler() {
           </div>
           <div className={styles.photos}>
             <div
-              className={
-                activeCharacter == 1
-                  ? styles["photo"] + "" + styles["activePhoto"]
-                  : styles["photo"]
-              }
+              className={styles["photo"]}
             >
               <Image
-                src={charactersData[0].fullpic}
-                alt="Nambi"
+                src={charactersData[activeCharacter].fullpic}
+                alt="photo"
                 width={360}
                 height={391}
               />
-            </div>
-            <div
-              className={
-                activeCharacter == 0
-                  ? styles["photo"] + "" + styles["activePhoto"]
-                  : styles["photo"]
-              }
-            >
-              <Image
-                src={charactersData[1].fullpic}
-                alt="Koki"
-                width={360}
-                height={391}
-              />
-            </div>
-            <div
-              className={
-                activeCharacter == 2
-                  ? styles["photo"] + "" + styles["activePhoto"]
-                  : styles["photo"]
-              }
-            >
-              <Image
-                src={charactersData[2].fullpic}
-                alt="Koki"
-                width={360}
-                height={391}
-              />
-            </div>
-            <div
-              className={
-                activeCharacter == 3
-                  ? styles["photo"] + "" + styles["activePhoto"]
-                  : styles["photo"]
-              }
-            >
-              <Image
-                src={charactersData[3].fullpic}
-                alt="Koki"
-                width={360}
-                height={391}
-              />
-            </div>
-            <div
-              className={
-                activeCharacter == 4
-                  ? styles["photo"] + "" + styles["activePhoto"]
-                  : styles["photo"]
-              }
-            >
-              <Image
-                src={charactersData[4].fullpic}
-                alt="Koki"
-                width={360}
-                height={391}
-              />
-            </div>
+            </div>      
           </div>
         </div>
       </div>
