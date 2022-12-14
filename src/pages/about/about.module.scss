@@ -1,51 +1,57 @@
-.PageWrapper{
+.PageWrapper {
     overflow-x: hidden;
     padding-top: 80px;
 }
 
-.pageContent{
+.pageContent {
     position: relative;
     display: flex;
     padding: 48px 132px;
 
-    h1,h2,h3{
+    h1,
+    h2,
+    h3 {
         font-family: Bamba;
-        color:#0e2332;
+        color: #0e2332;
         text-decoration: underline;
     }
-    p, li{
+
+    p,
+    li {
         line-height: 24px;
         text-align: center;
-        color:#6e7b84;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    li{
+
+    li {
         line-height: 28px;
     }
 
-    @media (max-width: 1025px){
-        padding: 48px 64px;        
+    @media (max-width: 1025px) {
+        padding: 48px 64px;
     }
-    @media (max-width: 769px){
+
+    @media (max-width: 769px) {
         flex-direction: column;
     }
 
 }
 
-.NavWrapper{
+.NavWrapper {
     position: fixed;
     top: 0;
     z-index: 3;
 }
 
-.right{
+.right {
     width: 75%;
-    @media (max-width: 769px){
+
+    @media (max-width: 769px) {
         width: 100%;
     }
 }
 
-.left{
+.left {
     background-color: rgb(255 255 255);
     padding: 16px;
     height: 400px;
@@ -57,7 +63,7 @@
     width: 20%;
 }
 
-.images{
+.images {
     width: 100%;
     display: grid;
     grid-template-columns: 240px 240px 240px;
@@ -65,12 +71,13 @@
     padding-left: 72px;
     padding-right: 132px;
 
-    @media (max-width: 769px){
+    @media (max-width: 769px) {
         padding-left: 32px;
         padding-right: 32px;
         grid-template-columns: 240px 240px;
     }
-    @media (max-width: 426px){
+
+    @media (max-width: 426px) {
         padding-left: 8px;
         padding-right: 8px;
         display: flex;
@@ -78,22 +85,60 @@
     }
 }
 
-.imageCard{
-    border: solid #f9f9f9 8px;
-    background-color: #f9f9f9;
+.imageCard {
+    background-color: transparent;
     border-radius: 8px;
     min-width: fit-content;
     max-height: 480px;
     transition: all ease-in-out 0.5s;
     transform: scale(90%);
     cursor: pointer;
-    
-    &:hover{
-        transform: scale(105%);
+    perspective: 1000px;
+
+    &:hover {
+        .flipCardInner {
+            transform: rotateY(180deg);
+        }
     }
 }
 
-.caption{
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 8px;
+
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}
+
+.flipCardFront, .flipCardBack {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flipCardBack {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 8px;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #003769;
+  transform: rotateY(180deg);
+}
+
+.flipCardFront {
+    background-color: #bbb;
+    color: black;
+    border-radius: 8px;
+}
+
+.caption {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 16px;
     text-overflow: clip;
