@@ -1,6 +1,7 @@
 .PageWrapper {
     overflow-x: hidden;
     padding-top: 80px;
+    background-color: #FFF000;
 }
 
 .pageContent {
@@ -70,6 +71,8 @@
     grid-gap: 16px;
     padding-left: 72px;
     padding-right: 132px;
+    background-color: #FFF996;
+    padding: 32px;
 
     @media (max-width: 769px) {
         padding-left: 32px;
@@ -128,7 +131,7 @@
   border-radius: 8px;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #003769;
+  background-color: black;
   transform: rotateY(180deg);
 }
 

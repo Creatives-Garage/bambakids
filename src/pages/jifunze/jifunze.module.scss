@@ -1,9 +1,13 @@
+.page{
+    background-color: #FFF996;
+    overflow-x: hidden;
+}
+
 .pageWrapper {
     display: flex;
     justify-content: space-around;
     padding-top: 80px;
-    background-color: #FFF996;
-    height: 85vh;
+    height: 65vh;
     overflow-x: hidden;
     overflow-y: hidden;
 
@@ -14,4 +18,9 @@
     @media (max-width: 426px) {
         flex-direction: column;        
     }
+}
+
+.footer{
+    margin-top: 48px;
+    max-width: 100%;
 }

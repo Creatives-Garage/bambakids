@@ -4,7 +4,7 @@ import styles from "./soma.module.scss";
 import Nav from "../../shared/Nav";
 import SomaBookCard from "../../shared/SomaBookCard";
 import Button from "../../shared/Button";
-import Footer from "../../../public/icons/footer.svg";
+import Footer from "../../../public/icons/footerTazama.svg";
 import BabaPickUp from "../../../public/photos/books/BabasPickUp/cover.png";
 import Jebet from "../../../public/photos/books/Jebet.png";
 import Onyis from "../../../public/photos/books/Mama Onyis.png";

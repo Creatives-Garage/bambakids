@@ -5,6 +5,7 @@ import path from 'path';
 import fs from 'fs/promises';
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Footer from "../../features/Home/Footer";
 
 async function getData() {
   const filePath = path.join(process.cwd(), 'src', 'shared', 'Data', 'tazamaData.json');
@@ -70,6 +71,7 @@ const Privacy = ({ feed, videoPayload }: any) => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
