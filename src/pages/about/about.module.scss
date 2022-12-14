@@ -1,8 +1,7 @@
 .PageWrapper {
     overflow-x: hidden;
     padding-top: 80px;
-    background-color: #fff566;
-    background-color: #FFF000;
+    background-color: #fffffb;
 }
 
 .pageContent {
@@ -72,7 +71,6 @@
     grid-gap: 8px;
     padding-left: 72px;
     padding-right: 40px;
-    background-color: #fff566;
     padding: 16px;
 
     @media (max-width: 769px) {
