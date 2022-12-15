@@ -14,8 +14,8 @@ const charactersData = [
     name: "Jebet",
     description:
       "Jebet the Runner is a book that tells the story of a girl named Jebet who grows up showcasing her talent for running. She liked running from a young age and would compete with her dolls to some imaginary finishing line. She would cheer herself and had an imaginary commentator voiceover running in her mind. She would also run from home to school and back, which was two kilometers away. One day, her mom recieves a phone call from from the National Olympic Committee inviting Jebet to compete in the forthcoming international race.",
-    headshot: "/characters/koki-headshot.png",
-    fullpic: "/characters/koki-fullpic.png",
+    headshot: "/characters/jebet-headshot.png",
+    fullpic: "/characters/jebet-fullpic.png",
   },
   {
     name: "Tanu",
@@ -26,8 +26,8 @@ const charactersData = [
   {
     name: "Ayanna",
     description: "Too often, little girls have dreams that are crushed by society telling them what they can and cannot do. Ayanna the Makanga is a heartwarming reminder to girls everywhere that their dreams are valid and they should listen to their innermost voice. Ayanna loved the road and public transport but was always told that jobs in transport were for tough boys. Our heroine does not pay these naysayers any heed. She grows up to do exactly what she loves and ends up changing the industry as a result.",
-    headshot: "/characters/koki-headshot.png",
-    fullpic: "/characters/koki-fullpic.png",
+    headshot: "/characters/ayanna-headshot.png",
+    fullpic: "/characters/ayanna-fullpic.png",
   },
   {
     name: "Kwame",
