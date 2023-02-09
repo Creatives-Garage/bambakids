@@ -68,11 +68,10 @@ function BambaKidsToggler() {
                 : styles["togglerButton"]
             }
           >
-            <Image
+            <img
               src={charactersData[0].headshot}
               alt="Nambi"
-              width={200}
-              height={200}
+              className={styles.togglerImage}
             />
           </div>
           <div
@@ -83,11 +82,10 @@ function BambaKidsToggler() {
                 : styles["togglerButton"]
             }
           >
-            <Image
+            <img
               src={charactersData[1].headshot}
               alt="Koki"
-              width={210}
-              height={210}
+              className={styles.togglerImage}
             />
           </div>
           <div
@@ -98,11 +96,10 @@ function BambaKidsToggler() {
                 : styles["togglerButton"]
             }
           >
-            <Image
+            <img
               src={charactersData[2].headshot}
               alt="Koki"
-              width={210}
-              height={210}
+              className={styles.togglerImage}
             />
           </div>
           <div
@@ -113,11 +110,10 @@ function BambaKidsToggler() {
                 : styles["togglerButton"]
             }
           >
-            <Image
+            <img
               src={charactersData[3].headshot}
               alt="Koki"
-              width={210}
-              height={210}
+              className={styles.togglerImage}
             />
           </div>
           <div
@@ -128,11 +124,10 @@ function BambaKidsToggler() {
                 : styles["togglerButton"]
             }
           >
-            <Image
+            <img
               src={charactersData[4].headshot}
               alt="Koki"
-              width={210}
-              height={210}
+              className={styles.togglerImage}
             />
           </div>
         </div>

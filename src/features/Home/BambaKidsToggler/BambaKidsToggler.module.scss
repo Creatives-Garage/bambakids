@@ -15,7 +15,7 @@
   }
 
   @media (max-width: 426px) {
-    margin-top: -400px;
+    margin-top: -320px;
   }
 }
 
@@ -37,11 +37,10 @@
     width: 80%;
   }
   @media (max-width: 426px) {
-    width: 90%;
+    width: 100%;
   }
 
   @media (max-width: 376px) {
-    width: 90%;
   }
   
   @media (max-width: 326px) {
@@ -59,13 +58,29 @@
     width: 45%;
   }
   @media (max-width: 426px) {
-    width: 70%;
+    width: 100%;
+    margin-left: -32px;
   }
   @media (max-width: 376px) {
-    width: 80%;
+    width: 100%;
   }
   @media (max-width: 326px) {
     width: 100%;
+  }
+}
+
+.togglerImage{
+  width: 210px;
+  height: 210px;
+
+  @media (max-width: 726px) {
+    width: 64px;
+    height: 64px;    
+  }
+
+  @media (max-width: 426px) {
+    width: 64px;
+    height: 64px;
   }
 }
 
@@ -86,7 +101,8 @@
   }
 
   @media (max-width: 426px) {
-    margin-top: -24px;
+    margin-top: -32px;
+    margin-right: 8px;
   }
 
   @media (max-width: 376px) {
