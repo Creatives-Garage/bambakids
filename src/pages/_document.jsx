@@ -32,6 +32,7 @@ class MyDocument extends Document {
             content="With the Bamba kids app , the young ones can read digital books, play educational games, be enlightened with general knowledge facts"
             key="og-description"
           />
+          <link rel="icon" type="image/x-icon" href="/logo.ico"></link>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900;1000&display=swap" rel="stylesheet" />
