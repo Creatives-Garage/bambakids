@@ -14,13 +14,18 @@ import fs from 'fs/promises';
 const Home: NextPage = ({videos}: any) => {
   const payload = videos?.videos;
   return (
-    <div className={styles.container}>
+    <>
+      <Head>
+        <title>Bamba Kids - Home</title>
+      </Head>
+      <div className={styles.container}>
       <Nav payload={payload}/>
       <Hero/>
       <BambaKidsToggler/>
       <AppDownloadSection />
       <Footer />
     </div>
+    </>
   )
 }
 
