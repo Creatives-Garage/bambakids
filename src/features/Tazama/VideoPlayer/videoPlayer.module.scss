@@ -26,6 +26,7 @@
     background-position: center;
     border: none;
     transition: all ease-in-out 0.5s;
+    cursor: pointer;
 
     &:hover{
         transform: translateY(-10%);
