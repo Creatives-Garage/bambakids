@@ -1,5 +1,6 @@
 import { loremParagraph } from "./utilityData";
 import BabasPickUpImage from "../../../public/photos/books/BabasPickUp/cover.png";
+import JebetTheRunnerImage from "../../../public/photos/books/JebetTheRunner/Cover.png"
 
 export const babasPickUp = {
   bookId: 1,
@@ -86,7 +87,7 @@ export const babasPickUp = {
 export const jebetTheRunner = {
   bookId: 1,
   bookName: "Jebet - the runner",
-  bookCover: BabasPickUpImage,
+  bookCover: JebetTheRunnerImage,
   credits: {
     illustrator: "Jr Pencil",
     storyBy: "Thayo",

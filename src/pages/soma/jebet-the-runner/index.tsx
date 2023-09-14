@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./jebet-the-runner.module.scss";
 import Button from "../../../shared/Button";
-import Page1 from "../../../../public/photos/books/Jebet.png";
+import Page1 from "../../../../public/photos/books/JebetTheRunner/page1.jpg";
 import { jebetTheRunner } from "../../../shared/Data/booksData";
 
 const titleVariants: any = {
@@ -67,14 +67,14 @@ const JebetTheRunner = () => {
         initial="in"
         animate={["center"]}
       >
-        {jebetTheRunner.pagesData[0].paragraph}
+        {/* {jebetTheRunner.pagesData[0].paragraph} */}
       </motion.div>
       <div className={styles.buttonsContainer0}>
         <div className={styles.pageButton0}>
           <Button variant="normal" text="Back to books page" action={()=> router.push("/soma/")}></Button>
         </div>
         <div className={styles.pageButton0}>
-          <Button variant="normal" text="Open Page 1" action={()=> router.push("/soma/jebet-the runner/page1")}></Button>
+          <Button variant="normal" text="Open Page 1" action={()=> router.push("/soma/jebet-the-runner/page1")}></Button>
         </div>
       </div>
       <div className={styles.page0ContentContainer}>
