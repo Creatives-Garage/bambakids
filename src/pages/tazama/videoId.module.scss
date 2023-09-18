@@ -4,13 +4,14 @@
     height: 100vh;
     overflow-x: hidden;
     @media (max-width: 476px) {
-        padding-top: 96px; 
+        padding-top: 0px; 
     }
 }
 
 .videoPlayerWrapper{
     display: flex;
     padding: 48px 72px;
+    height: 75%;
 
     @media (max-width: 1025px) {
         padding: 48px 24px;
@@ -19,16 +20,31 @@
         flex-direction: column;
     }
     @media (max-width: 476px) {
-        padding: 0px 16px; 
+        padding: 48px 16px; 
     }
 }
+
+// .rightSideWrapper{
+//     height: 548px;
+
+//     @media (max-width: 1025px) {
+        
+//     }
+// }
 
 .suggestedVideosWrapper{
     position: relative;
     width: 100%;
     background: #B0C3FF;
     overflow-y: scroll;
-    height: 367px;
+    height: 80%;
+
+    @media (max-width: 1025px) {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        height: 90%;
+    }
+
     @media (max-width: 689px) {
         overflow-y: hidden;
         overflow-x: scroll;
@@ -43,12 +59,38 @@
     align-items: center;
     padding: 24px;
     @media (max-width: 689px) {
-        flex-direction: row; 
+        flex-direction: column; 
+        gap: 1em;
     }    
 }
 
 .suggestedVideo{
     width: 200px;
+    cursor: pointer;
+
+    &:hover{
+        .video{
+            border: solid #ff6363 8px;
+            background-color: #ff6363;
+        }
+
+        .suggestedVideoTitle{
+            background-color: #ff6363;
+            color: white;
+        }
+    }
+
+    &:focus{
+        .video{
+            border: solid #ff6363 8px;
+        }
+
+        .suggestedVideoTitle{
+            background-color: #ff6363;
+            color: white;
+        }                
+    }
+
     @media (max-width: 476px) {
         flex-wrap: wrap;
         flex-direction: row;
@@ -61,7 +103,7 @@
 .video{
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: white;
     border: solid white 8px;
     margin-top: 20px;
 
@@ -91,4 +133,8 @@
     font-size: 24px;
     font-family: nunito;
     font-weight: 800;
+
+    @media (max-width: 476px){
+        justify-content: flex-start;
+    }
 }

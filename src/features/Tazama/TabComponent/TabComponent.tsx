@@ -56,7 +56,7 @@ const TabComponent = ({videoData}: any)=> {
               return(
                 <div key={index}>
                   <VideoCard 
-                    title={data.videoName} image="" link={`tazama/${data.videoId}`}
+                    title={data.videoName} image={data.thumbnail} link={`tazama/${data.videoId}`}
                     active={activeTabIndex === index}
                   />
                 </div>              

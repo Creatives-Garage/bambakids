@@ -36,7 +36,7 @@ function VideoCard({ title, image, link, active }: videoCardProps)  {
         variants = {cardVariant}
       >
         <div className={styles.thumbnail}>
-          <Image src={image} width={200} height={200} alt="play" />
+          <Image src={image} width={200} height={200} alt={title} />
         </div>
         <div className={styles.descriptionBox}>{title}</div>
         <div className={styles.playIconWrapper}>

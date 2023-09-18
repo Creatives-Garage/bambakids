@@ -10,6 +10,10 @@ const nextConfig = {
     });
 
     return config;
+  },
+
+  images: {
+    domains: ['www.bambaapp.creativesgarage.org'],
   }
 }
 

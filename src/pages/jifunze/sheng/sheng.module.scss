@@ -1,6 +1,7 @@
 .page{
     overflow-x: hidden;
     background-color: #FFF996;
+    height: 100vh;
 }
 
 .navigationHeader{
@@ -11,6 +12,12 @@
     padding-left: 132px;
     padding-top: 24px;
     padding-bottom: 0px;
+
+    
+
+    @media (max-width: 426px) {
+        padding-top: 72px;        
+    }
 }
 
 .backbutton{
@@ -29,16 +36,20 @@
     font: Nunito;
     font-weight: 700;
     color: white;
+    margin-right: 10em;
+    
 
     &:hover{
         transform: translateY(-10%);
+        cursor: pointer;
+        
     }
 }
 
-.contentTitle{
+.contentTitle {
     display: flex;
     justify-content: flex-start;
-    margin-left: 340px;
+    margin-left: 300px;
     width: 100%;
 
     h2{

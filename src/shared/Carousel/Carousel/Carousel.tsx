@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "../../Button";
-import ShengCard from "../CarouselCard";
+import CarouselCard from "../CarouselCard";
 import styles from "./Carousel.module.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -53,7 +53,7 @@ const ShengCarousel = ({ data }: any) => {
             className={styles.carouselCard}
             onClick={() => setImageIndex(index)}
           >
-            <ShengCard
+            <CarouselCard
               sheng={item.name}
               translation={item.translation}
               image={item.image}

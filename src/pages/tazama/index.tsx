@@ -11,9 +11,14 @@ import TabComponent from '../../features/Tazama/TabComponent/';
 import Nav from '../../shared/Nav';
 import Footer from '../../../public/icons/footer.svg';
 import {tazamaData} from '../../shared/Data/tazamaData';
+import Head from 'next/head';
 
-const Videos: NextPage = ({data}: any) => {    
+const Videos: NextPage = ({data}: any) => {   
     return (
+      <>
+      <Head>
+        <title>Bamba Kids - videos</title>
+      </Head>
       <div className={styles.container}>
         <Nav/>
         <TabComponent videoData={data?.videos}/>
@@ -21,6 +26,7 @@ const Videos: NextPage = ({data}: any) => {
           <Footer />
         </div>                
       </div>
+      </>
     )
 }
 

@@ -39,7 +39,7 @@ const Proverbs: NextPage = ({videos}: any) => {
               variants={imageVariants}
               initial="in"
               animate={["center"]}
-            >Learn Sheng&apos;</motion.h2>
+            >Learn Proverbs</motion.h2>
           </div>
         </div>
         <div className={styles.carouselWrapper}>

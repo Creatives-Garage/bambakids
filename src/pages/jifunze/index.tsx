@@ -2,6 +2,7 @@ import React from "react";
 import JifunzeCard from "../../features/Jifunze/JifunzeCard";
 import Nav from "../../shared/Nav";
 import styles from "./jifunze.module.scss";
+import Footer from '../../../public/icons/footerTazama.svg';
 import path from 'path';
 import fs from 'fs/promises';
 
@@ -26,6 +27,9 @@ export default function Jifunze({videos}: any) {
           route="/jifunze/did-you-know"
           description="A collection of interesting facts about the world and the country we live in. Did you know that the Kenyan National anthem was derived from a Pokomo lullaby? No?"
         />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
       </div>
     </div>
   );
