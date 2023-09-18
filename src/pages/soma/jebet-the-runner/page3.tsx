@@ -93,8 +93,8 @@ const Page2 = () => {
             <div className={styles.page3ImageWrapperRight}>
               <Image
                 src={page4Image}
-                width={360}
-                height={480}
+                width={320}
+                height={400}
                 alt="Baba pick up"
                 priority
               />
