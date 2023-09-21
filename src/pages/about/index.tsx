@@ -28,10 +28,10 @@ export const getServerSideProps = async (context: any) => {
   }
 }
 
-const Privacy = ({ feed, videoPayload }: any) => {
+const About = ({ feed, videoPayload }: any) => {
   const payload = videoPayload?.videos;
 
-  console.log(feed.data);
+  console.log("Feed: ", feed);
   const images = feed.data;
   return (
     <div className={styles.PageWrapper}>
@@ -75,6 +75,6 @@ const Privacy = ({ feed, videoPayload }: any) => {
   );
 };
 
-export default Privacy;
+export default About;
 
 
