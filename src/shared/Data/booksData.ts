@@ -165,6 +165,21 @@ export const kwameTheGiraffe = {
     {
         paragraph: "The hyenas always treated the other animals badly and this would always worry Kwame. The Hyenas bully othe animals and sometimes chase them away from their home. Kwame decided to do something about it."
     },
+    {
+      paragraph: "Everyday, Kwame would go away from the watering hole, deep into the bush where no other animals could see him. When he thought he was alone he would try to let out a big roar but all that came out was a meek growl."
+    },
+    {
+      paragraph: "The hyenas, were always jealous of Kwame. 'Look at him,' Dush the Hyena said. 'Look at how he walks around the watering hole. Singing. Dancing and telling stories like he's so special! Everybody likes him. He needs to go!' One day, the hyenas followed Kwame when he was going out into the bush to practice his roar. They wanted to get rid of him. When his back was turned, they rushed Kwame from behind to attack him!"
+    },
+    {
+      paragraph: "But as they ran towards Kwame, he turned around gathered all his courage, took a deep breath. And let out a fierce roar that was heard all over the savannah! The hyenas were so scared by Kwame's bravery and roar that they ran away and never went back to the watering hole to bully the other animals."
+    },
+    {
+      paragraph: "Everyone at the watering hole was very grateful for what Kwame had done for them. Even the lions were impressed by him."
+    },
+    {
+      paragraph: "The End."
+    }
   ]    
 }
 
@@ -177,4 +192,15 @@ export const books = [
     name: "Jebet the Runner",
     data: jebetTheRunner,
   },
+  {
+    name: "Kwame the Giraffe",
+    data: kwameTheGiraffe,
+  },
+  {
+   // name: : "Ayanna the Makanga",
+   // data: ayannaTheMakanga,
+  },
+  {
+    name: ""
+  }
 ];
