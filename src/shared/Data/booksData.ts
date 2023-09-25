@@ -100,6 +100,8 @@ export const jebetTheRunner = {
   },
   pagesData: [
     {
+
+      
         paragraph:"When Jebet was around 7 years old, she would line up all her dolls on the verandah and run past them to a makeshift finish line. As she ran, imaginary sports announcers would say `Jebet is coming up behind Kiplagat... she passes him and is now in the lead. She is leaving the rest of the pack behind her. Look at her run. They don't have  achnace of catching up! Jebet crosses the line and it's a new world recooooord!` In her mind, the dolls would cheer and shout:"
     },
     {
@@ -183,6 +185,56 @@ export const kwameTheGiraffe = {
   ]    
 }
 
+export const ayannaTheMakanga = {
+  bookId: 1,
+  bookName: "Ayanna the Makanga",
+  bookCover: BabasPickUpImage,
+  credits: {
+    illustrator: "Jr Pencil",
+    storyBy: "Thayo",
+    copyEditor: "Adam Kiboi",
+    authorFootnote: "To my baba, See! I turned out great.",
+  },
+  legal: {
+    publishedBy: "Creatives Garage, Nairobi, 2021",
+    copywright: "Creatives Garage",
+  },
+  pagesData: [
+    {
+        paragraph: "When Ayanna was a young child, she always wanted to be on long winding roads. Riding in cars and soaking up the beauty of everything. Matatus, buses and lorries would zoom past her and she hoped that one day she would work in public transport. Imagine such fun! Travelling all over the place. Meeting new people and helping them get to where they were going."
+    },
+    {
+      paragraph: "Everyone would tell her that dreaming to work in transport was for boys. 'Girls are supposed to dream about cooking. Making pretty clothes and being mum Ayanna!' However Ayanna didn't care."
+    },
+    {
+      paragraph: "She'd pretend that she was a makanga when she was on the merry-go-round shouting 'Beba! Beba! 20 bob to fun town!' Wheneer anyone got on and made vrooom vroooooom noises as it spun around, Ayanna knew she could do anything she set her mind to."
+    },
+    {
+      paragraph: "Ayanna's dream never died or fizzled out. If anything, it got stronger! Ayanna went to driving school and got all the right licences to become a driver. However when she looked around for work everyone kept telling her the same thing."
+    },
+    {
+      paragraph: "'You're a woman. You can't do this work. It needs tough men'. However, at one job interview she met Mary, a matatu owner who had been told the same things when she was starting her matatu business. I like your energy. And I can tell you're a hard worker. I don't have any jobs for driver's right now but. Do you want to be a makanga' Ayanna had always wanted to be the driver but she was all too happy to start somewhere in transport."
+    },
+    {
+      paragraph: "Ayanna always noticed that some makangas were mean to passengers and some of the drivers drove recklessly...Many people had started disliking everyone who worked in transport because of a few bad bananas in the bunch."
+    },
+    {
+      paragraph: "She knew that the only way she could change how people thought about makangas and drivers was with kindness and by being the best makanga she could be."
+    },
+    {
+      paragraph: "So, every morning she woke up bright and early, dressed in her beautiful maroon uniform, wore a smile on her face and went to work. At work she ushered every passenger in with a smile and a greeting. 'Hujambo' 'How are you this morning!' 'You're looking great today!' 'Karibu! Let me help you with your bag.'"
+    },
+    {
+      paragraph: "Her matatu would always fill faster than all the others because Ayanna was always so polite. She would even remember the names of all her regular customers and start conversations with them just to see how they were doing. When old ladies were going to sell their goods at the market, Ayanna made sure that there was always someone at their destination to help them carry their goods. The customers loved her and all the other makangas began to take notice. Soon, all the other makangas started taking their work seriously like Ayanna."
+    },
+    {
+      paragraph: "Mary was pleased with Ayanna's work and asked her if she would like to become the manager of her fleet of matatus. 'Pole Madame Mary, but for now I just want to drive the passengers!' As soon as Mary heard that she gave Ayanna the keys to her newest matatu. It wasn't long before Ayanna became known as the best matatu driver. She was always polite to other drivers cars on the road, adhered to traffic rules, and was even appointed  as an ambassador of road safety by the traffic police."
+    },
+    {
+      paragraph: "Years later, through her determination, bravery and believe in herself, Ayanna had her own fleet of matatus. All the drivers and makangas who worked for her were women and they all worked exactly as she had! Ayanna never gave up on her dream and she helped more women follow theirs . And even if Ayanna was the owner of the matatus, she never stopped being a driver!"
+    }
+  ]
+}
 export const books = [
   {
     name: "Baba's Pick up",
@@ -197,8 +249,8 @@ export const books = [
     data: kwameTheGiraffe,
   },
   {
-   // name: : "Ayanna the Makanga",
-   // data: ayannaTheMakanga,
+  name: "Ayanna the Makanga",
+  data: ayannaTheMakanga,
   },
   {
     name: ""

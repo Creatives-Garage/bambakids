@@ -9,6 +9,7 @@ import BabaPickUp from "../../../public/photos/books/BabasPickUp/cover.png";
 import Jebet from "../../../public/photos/books/JebetTheRunner/Cover.png";
 import Onyis from "../../../public/photos/books/Mama Onyis.png";
 import Kwame from "../../../public/photos/books/KwameTheGiraffe/cover.jpg"
+import Ayanna from "../../../public/photos/books/AyannaTheMakanga/cover.jpg"
 
 const Soma: NextPage = () => {
   return (
@@ -18,7 +19,7 @@ const Soma: NextPage = () => {
         <SomaBookCard link="/soma/babas-pickup" bookName="Babas Pick Up" image={BabaPickUp} />
         <SomaBookCard link="/soma/jebet-the-runner" bookName="Jebet - The Runner" image={Jebet} />
         <SomaBookCard link="/soma/kwame-the-giraffe" bookName="Kwame - The Giraffe" image={Kwame} />
-
+        <SomaBookCard link="/soma/ayanna-the-makanga" bookName="Ayanna - The Makanga" image={Ayanna} />
       </div>
       {/* <div className={styles.loadMoreWrapper}>
         <Button variant="normal" text="LOAD MORE..." icon={false}></Button>
