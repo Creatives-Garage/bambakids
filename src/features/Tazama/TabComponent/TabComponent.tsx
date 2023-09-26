@@ -3,6 +3,7 @@ import VideoCard from "../VideoCard";
 import styles from "./TabComponent.module.scss";
 import { tazamaData } from "../../../shared/Data/tazamaData";
 import { motion } from "framer-motion";
+import { playClickSound } from "../../../shared/utils/soundClickEvents";
 
 const TabComponent = ({videoData}: any)=> {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
@@ -36,7 +37,7 @@ const TabComponent = ({videoData}: any)=> {
                   : styles["TabButton"]
               }
               ref={(el: HTMLButtonElement) => (tabsRef.current[idx] = el)}
-              onClick={() => setActiveTabIndex(idx)}
+              onClick={() => {setActiveTabIndex(idx); playClickSound()}}
             >
               {tab.categoryName}
             </button>
