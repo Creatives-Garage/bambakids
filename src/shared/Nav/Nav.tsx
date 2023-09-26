@@ -6,6 +6,7 @@ import styles from "./Nav.module.scss";
 import Button from "../Button";
 import Fuse from "fuse.js";
 import Link from "next/link";
+import { playClickSound } from "../utils/soundClickEvents";
 
 function Nav({ payload }: any) {
   const [searchValue, setSearchValue] = useState<string>("");
@@ -55,7 +56,7 @@ function Nav({ payload }: any) {
               text="Home"
               variant="normal"
               icon
-              action={() => router.push("/")}
+              action={() => {router.push("/"); playClickSound()}}
             >
               <Image src="/icons/home.svg" alt="home" width={32} height={32} />
             </Button>
@@ -65,7 +66,7 @@ function Nav({ payload }: any) {
               text="About us" 
               variant="normal" 
               icon
-              action={() => router.push("/about")}  
+              action={() => {router.push("/about"); playClickSound()}}  
             >
               <Image
                 src="/icons/information.svg"
@@ -88,7 +89,7 @@ function Nav({ payload }: any) {
             text="Download"
             variant="normal"
             icon
-            action={() => router.push("/#download")}
+            action={() => {router.push("/#download"); router.push("/#download");}}
           >
             <Image
               src="/icons/download.svg"
@@ -97,7 +98,7 @@ function Nav({ payload }: any) {
               height={32}
             />
           </Button>
-          <div onClick={() => setSearchForm(!searchForm)}>
+          <div onClick={() => {setSearchForm(!searchForm); playClickSound()}}>
             <Button text="Search" variant="search">
               <Image
                 src="/icons/search.svg"
