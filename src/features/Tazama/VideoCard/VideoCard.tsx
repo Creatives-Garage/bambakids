@@ -1,5 +1,4 @@
 import React from "react";
-import useSound from "use-sound";
 import { motion } from "framer-motion";
 import styles from "./videoCard.module.scss";
 import Image from "next/image";
@@ -31,7 +30,6 @@ interface videoCardProps{
 }
 
 function VideoCard({ title, image, link, active }: videoCardProps)  {
-  const [playClickSound] = useSound(clickSound.default);
 
   return (
     <Link href={link}>
