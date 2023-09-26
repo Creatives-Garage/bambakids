@@ -4,8 +4,10 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./babas-pickup.module.scss";
 import Button from "../../shared/Button";
+// TODO remove this backup image when actually properly filling the data
 import Page1 from "../../../public/photos/books/BabasPickUp/page1.jpg";
 import {  BookData } from "../../shared/Data/booksData";
+import { removeAfterLastSlash } from "../../shared/Utils/helperFunctions";
 
 const titleVariants: any = {
   in: {
@@ -56,32 +58,33 @@ const descriptionVariants: any = {
   };
   
 
-const BookViewer = ({bookData, initialPageNumber }: {bookData: BookData, initialPageNumber: number}) => {
+const BookViewer = ({bookData, pageIndex }: {bookData: BookData, pageIndex: number}) => {
   const router = useRouter();
   const shouldReduceMotion = useReducedMotion();
-  const [pageIndex, setPageIndex] = useState<number>(initialPageNumber);
 
   const isOnCoverPage = pageIndex === -1;
 
   const handlePreviousPageClick = () => {
     console.log(pageIndex)
     if(pageIndex >= -1){
-        setPageIndex(pageIndex - 1)
+      pushToNewPageIndex(pageIndex - 1)
     }
   }
 
 
   const handleNextPageClick = () => {
-    console.log(bookData.pagesData.length)
     if(pageIndex < bookData.pagesData.length - 1){
-        setPageIndex(pageIndex + 1)
+      pushToNewPageIndex(pageIndex + 1)
     }
   }
 
-    // TODO: at later stage adapt useUseEffect to adapt router url when pageIndex changes
+  const pushToNewPageIndex = (newPageIndex: number) => {
+    router.push(removeAfterLastSlash(router.asPath) + '/' + newPageIndex)
+    
+  }
 
 
-    // TODO merge duplicate code into one
+    // TODO merge duplicate code into one for the ? : operator
   return (
     isOnCoverPage ? (
     <div className={styles.coverContainer}>
@@ -145,7 +148,7 @@ const BookViewer = ({bookData, initialPageNumber }: {bookData: BookData, initial
         <div className={styles.buttonsContainer}>
           <Button variant="normal" text="Books Page" action={()=> router.push("/soma/")}></Button>
           <Button variant="normal" text="Previous Page" action={()=> handlePreviousPageClick()}></Button>
-          <Button variant="normal" text="Next Page" action={()=> handleNextPageClick()}></Button>
+          {(pageIndex !== bookData.pagesData.length - 1) && <Button variant="normal" text="Next Page" action={()=> handleNextPageClick()}></Button>}
         </div>
       </div>
     )

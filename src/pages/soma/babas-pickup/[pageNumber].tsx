@@ -7,7 +7,7 @@ const BabasPickUpPageNumber = () => {
     const { pageNumber } = router.query;
     const pageNumberAsNumber = Number(pageNumber);
     return (
-        pageNumber && <BookViewer bookData={babasPickUpForBookViewer} initialPageNumber={pageNumberAsNumber} />
+        pageNumber && <BookViewer bookData={babasPickUpForBookViewer} pageIndex={pageNumberAsNumber} />
     )
 }
 

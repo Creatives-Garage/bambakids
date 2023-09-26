@@ -1,11 +1,10 @@
-import { babasPickUp, babasPickUpForBookViewer } from "../../../shared/Data/booksData";
+import { babasPickUpForBookViewer } from "../../../shared/Data/booksData";
 import BookViewer from "../../../features/Soma/BookViewer";
-import { useRouter } from "next/router";
 
-// TODO replace with index
+// TODO make index.tsx of the folder
 const BabasPickUp = () => {
     return (
-        <BookViewer bookData={babasPickUpForBookViewer} initialPageNumber={-1} />
+        <BookViewer bookData={babasPickUpForBookViewer} pageIndex={-1} />
     )
 }
 
