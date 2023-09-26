@@ -1,12 +1,22 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-
-  webpack(config) {
+module.exports = {
+  webpack: (config, { isServer }) => {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"]
+      use: ['@svgr/webpack'],
+    });
+
+    config.module.rules.push({
+      test: /\.mp3$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'static',
+            publicPath: '/_next/static',
+            name: '[name].[ext]',
+          },
+        },
+      ],
     });
 
     return config;
@@ -22,6 +32,4 @@ const nextConfig = {
       },
     ],
   }
-}
-
-module.exports = nextConfig;
+};
