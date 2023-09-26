@@ -13,8 +13,15 @@ const nextConfig = {
   },
 
   images: {
-    domains: ['www.bambaapp.creativesgarage.org'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.bambaapp.creativesgarage.org',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
