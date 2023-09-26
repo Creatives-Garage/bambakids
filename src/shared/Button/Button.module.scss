@@ -19,6 +19,7 @@
     &:hover {
         translate: 0px 4px;
         border-bottom-width: 8px;
+    
     }
 
     @media (max-width: 426px) {}
@@ -36,9 +37,13 @@
 .active {
     background-color: #D21987;
     border-bottom: 12px solid #B30058;
+    cursor: pointer;
+    
 
     &:hover {
         border-bottom: solid 6px #B30058;
+        cursor: pointer;
+        
     }
 }
 
