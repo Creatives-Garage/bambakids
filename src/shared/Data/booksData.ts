@@ -1,5 +1,16 @@
 import { loremParagraph } from "./utilityData";
 import BabasPickUpImage from "../../../public/photos/books/BabasPickUp/cover.png";
+import babasPickupPage1 from "../../../public/photos/books/BabasPickUp/1.jpeg";
+import babasPickupPage2 from "../../../public/photos/books/BabasPickUp/2.jpeg";
+import babasPickupPage3 from "../../../public/photos/books/BabasPickUp/3.jpeg";
+import babasPickupPage4 from "../../../public/photos/books/BabasPickUp/4.jpeg";
+import babasPickupPage5 from "../../../public/photos/books/BabasPickUp/5.jpeg";
+import babasPickupPage6 from "../../../public/photos/books/BabasPickUp/6.jpeg";
+import babasPickupPage7 from "../../../public/photos/books/BabasPickUp/7.jpeg";
+import babasPickupPage8 from "../../../public/photos/books/BabasPickUp/8.jpeg";
+import babasPickupPage9 from "../../../public/photos/books/BabasPickUp/9.jpeg";
+import babasPickupPage10 from "../../../public/photos/books/BabasPickUp/10.jpeg";
+
 import JebetTheRunnerImage from "../../../public/photos/books/JebetTheRunner/Cover.png"
 
 export type BookData = {
@@ -32,11 +43,12 @@ export const babasPickUpForBookViewer: BookData = {
   bookCover: BabasPickUpImage,
   credits: {
     illustrator: "Jr Pencil",
-    storyBy: "Thayo",
+    storyBy: "Thayu",
     copyEditor: "Adam Kiboi",
     authorFootnote: "To my baba, See! I turned out great.",
   },
-  backMatter:         "A daughter relives the amazing memories she had of her dad while they were kids. Babas Pickup is a story about her adventures with her sisters and father.",
+  backMatter:
+    "A daughter relives the amazing memories she had of her dad while they were kids. Babas Pickup is a story about her adventures with her sisters and father.",
   legal: {
     publishedBy: "Creatives Garage, Nairobi, 2021",
     copywright: "Creatives Garage",
@@ -44,55 +56,44 @@ export const babasPickUpForBookViewer: BookData = {
 
   pagesData: [
     {
-      text:
-        "The time I spent with my father during my formative years was delightful",
-      // pageImage: "",
+      text: "The time I spent with my father during my formative years was delightful",
+      pageImage: babasPickupPage1,
     },
     {
-      text:
-        "He often came home just before dinner to play music on his AM transistor, then sit on his chair, sing along and thump his feet to the rhythm of the music.",
-      // pageImage: "",
+      text: "He often came home just before dinner to play music on his AM transistor, then sit on his chair, sing along and thump his feet to the rhythm of the music.",
+      pageImage: babasPickupPage2,
     },
     {
-      text:
-        "Just as music by artists like Daudi Kibaka would hit the high note, Baba would pick shoot out from his chair, pick me up and dance. ",
-      // pageImage: "",
-    
+      text: "Just as music by artists like Daudi Kibaka would hit the high note, Baba would pick shoot out from his chair, pick me up and dance. ",
+      pageImage: babasPickupPage3,
     },
     {
-      text:
-      "His loud voice filling the house with offkey notes and butchered lyrics. Everyone knew he had a great singing voice and he knew the lyrics to the song. He just did it to hear the peals of laughter that often filled our home",
-      // pageImage: "",
+      text: "His loud voice filling the house with offkey notes and butchered lyrics. Everyone knew he had a great singing voice and he knew the lyrics to the song. He just did it to hear the peals of laughter that often filled our home",
+      pageImage: babasPickupPage4,
     },
     {
-      text:
-        "Of all the things we did, my favourite was riding the back of his pickup. My sisters and I would imagine ourselves as pirates or firefighters at the back as he drmove us home from the market",
-      // pageImage: "",
+      text: "Of all the things we did, my favourite was riding the back of his pickup. My sisters and I would imagine ourselves as pirates or firefighters at the back as he drmove us home from the market",
+      pageImage: babasPickupPage5,
     },
     {
-      text:
-        "The wind would push and pull our faces into weird visages that drove us into fits of giggles",
-      // pageImage: "",
+      text: "The wind would push and pull our faces into weird visages that drove us into fits of giggles",
+      pageImage: babasPickupPage6,
     },
     {
-      text:
-        "The pickup was soft yellow with big red and white stripes at the back and the number 80 written in black on the tailgate. As he cruised down the dusty roads of Ukambani listening to footbal matches on VOK. Other kids would try to chase the car as we cheered them on from the truck bed",
-      // pageImage: "",
+      text: "The pickup was soft yellow with big red and white stripes at the back and the number 80 written in black on the tailgate. As he cruised down the dusty roads of Ukambani listening to footbal matches on VOK. Other kids would try to chase the car as we cheered them on from the truck bed",
+      pageImage: babasPickupPage7,
     },
     {
-      text:
-        "Despite the farmiliarity of the scenery, every day of the pick up surfing felt like a new adventure. We loved driving past the maize-filled farms, brown cows drinking at the streams near the house. Mama Mueni's farm was always loud with the clucking of chicken and village elders who were always present from early morning to late afternoon, seated under a tree near our school.",
-      // pageImage: "",
+      text: "Despite the farmiliarity of the scenery, every day of the pick up surfing felt like a new adventure. We loved driving past the maize-filled farms, brown cows drinking at the streams near the house. Mama Mueni's farm was always loud with the clucking of chicken and village elders who were always present from early morning to late afternoon, seated under a tree near our school.",
+      pageImage: babasPickupPage8,
     },
     {
-      text:
-        "We especially loved driving through Zakayo's farm that seemed to always have mango trees full of ripe, yummy fruit.",
-      // pageImage: "",
+      text: "We especially loved driving through Zakayo's farm that seemed to always have mango trees full of ripe, yummy fruit.",
+      pageImage: babasPickupPage9,
     },
     {
-      text:
-        "Baba's no longer here, and it has been years since we threw up dust clouds in Ukambani but my memories of our life on his pick up live on.",
-      // pageImage: "",
+      text: "Baba's no longer here, and it has been years since we threw up dust clouds in Ukambani but my memories of our life on his pick up live on.",
+      pageImage: babasPickupPage10,
     },
   ],
 };
