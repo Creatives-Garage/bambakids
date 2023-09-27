@@ -12,7 +12,8 @@
     padding-left: 132px;
     padding-top: 24px;
     padding-bottom: 0px;
-    text-align: center;
+
+    
 
     @media (max-width: 426px) {
         padding-top: 72px;        
@@ -35,6 +36,7 @@
     font: Nunito;
     font-weight: 700;
     color: white;
+    margin-right: 10em;
     
 
     &:hover{

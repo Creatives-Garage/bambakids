@@ -11,6 +11,8 @@ import babasPickupPage8 from "../../../public/photos/books/BabasPickUp/8.jpeg";
 import babasPickupPage9 from "../../../public/photos/books/BabasPickUp/9.jpeg";
 import babasPickupPage10 from "../../../public/photos/books/BabasPickUp/10.jpeg";
 
+import JebetTheRunnerImage from "../../../public/photos/books/JebetTheRunner/Cover.png"
+
 export type BookData = {
   bookId: number;
   bookName: string;
@@ -181,7 +183,7 @@ export const babasPickUp = {
 export const jebetTheRunner = {
   bookId: 1,
   bookName: "Jebet - the runner",
-  bookCover: BabasPickUpImage,
+  bookCover: JebetTheRunnerImage,
   credits: {
     illustrator: "Jr Pencil",
     storyBy: "Thayo",
@@ -214,6 +216,15 @@ export const jebetTheRunner = {
     {
         paragraph:"But she's running like a veteran. She's passed and is now in second place. She's caught up with Robertson from the USA. She's past him and is now in the lead! WOW! JUST WOW! It's like Jebet got another burst of energy and she's left Roberts way behind her as she comes to the finish line. Is it - is it - Yes! A new world recooooord. Jebet the youngest runner in the race has shattered the previous world record! What a phenomenal performance. She looked up and realised that it wasn't her dolls cheering her but the audience in the stadium. She beamed with pride, her smile almost splitting her face as se ran a lap around the stadium. Hoisting the Kenyan flag high, once again, as the entire world cheered. "
     },
+    {
+      paragraph:"But she's running like a veteran. She's passed and is now in second place. She's caught up with Robertson from the USA. She's past him and is now in the lead! WOW! JUST WOW! It's like Jebet got another burst of energy and she's left Roberts way behind her as she comes to the finish line. Is it - is it - Yes! A new world recooooord. Jebet the youngest runner in the race has shattered the previous world record! What a phenomenal performance. She looked up and realised that it wasn't her dolls cheering her but the audience in the stadium. She beamed with pride, her smile almost splitting her face as se ran a lap around the stadium. Hoisting the Kenyan flag high, once again, as the entire world cheered. "
+  },
+  {
+    paragraph:"But she's running like a veteran. She's passed and is now in second place. She's caught up with Robertson from the USA. She's past him and is now in the lead! WOW! JUST WOW! It's like Jebet got another burst of energy and she's left Roberts way behind her as she comes to the finish line. Is it - is it - Yes! A new world recooooord. Jebet the youngest runner in the race has shattered the previous world record! What a phenomenal performance. She looked up and realised that it wasn't her dolls cheering her but the audience in the stadium. She beamed with pride, her smile almost splitting her face as se ran a lap around the stadium. Hoisting the Kenyan flag high, once again, as the entire world cheered. "
+},
+{
+  paragraph:"But she's running like a veteran. She's passed and is now in second place. She's caught up with Robertson from the USA. She's past him and is now in the lead! WOW! JUST WOW! It's like Jebet got another burst of energy and she's left Roberts way behind her as she comes to the finish line. Is it - is it - Yes! A new world recooooord. Jebet the youngest runner in the race has shattered the previous world record! What a phenomenal performance. She looked up and realised that it wasn't her dolls cheering her but the audience in the stadium. She beamed with pride, her smile almost splitting her face as se ran a lap around the stadium. Hoisting the Kenyan flag high, once again, as the entire world cheered. "
+}
   ]
 };
 
