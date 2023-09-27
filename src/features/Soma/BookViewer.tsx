@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {motion, useReducedMotion} from "framer-motion"
+import {Variants, motion, useReducedMotion} from "framer-motion"
 import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./babas-pickup.module.scss";
@@ -9,19 +9,20 @@ import Page1 from "../../../public/photos/books/BabasPickUp/page1.jpg";
 import {  BookData } from "../../shared/Data/booksData";
 import { removeAfterLastSlash } from "../../shared/Utils/helperFunctions";
 
+
 const titleVariants: any = {
   in: {
     x: 0,
     transition: {
-      duration: 0.9
-    }
+      duration: 0.9,
+    },
   },
   center: {
     y: 10,
-    transformOrigin: 'top',
+    transformOrigin: "top",
     transition: {
-      duration: 0.9
-    }
+      duration: 0.9,
+    },
   },
 };
 
@@ -29,34 +30,33 @@ const imageVariants: any = {
   in: {
     x: -20,
     transition: {
-      duration: 0.9
-    }
+      duration: 0.9,
+    },
   },
   center: {
     x: 0,
-    transformOrigin: 'top',
+    transformOrigin: "top",
     transition: {
-      duration: 0.9
-    }
+      duration: 0.9,
+    },
   },
 };
 
 const descriptionVariants: any = {
-    in: {
-      y: 0,
-      transition: {
-        duration: 0.9
-      }
+  in: {
+    y: 0,
+    transition: {
+      duration: 0.9,
     },
-    center: {
-      y: 50,
-      transformOrigin: 'top',
-      transition: {
-        duration: 0.9
-      }
+  },
+  center: {
+    y: 50,
+    transformOrigin: "top",
+    transition: {
+      duration: 0.9,
     },
-  };
-  
+  },
+};  
 
 const BookViewer = ({bookData, pageIndex }: {bookData: BookData, pageIndex: number}) => {
   const router = useRouter();
@@ -71,7 +71,6 @@ const BookViewer = ({bookData, pageIndex }: {bookData: BookData, pageIndex: numb
     }
   }
 
-
   const handleNextPageClick = () => {
     if(pageIndex < bookData.pagesData.length - 1){
       pushToNewPageIndex(pageIndex + 1)
@@ -79,12 +78,10 @@ const BookViewer = ({bookData, pageIndex }: {bookData: BookData, pageIndex: numb
   }
 
   const pushToNewPageIndex = (newPageIndex: number) => {
-    router.push(removeAfterLastSlash(router.asPath) + '/' + newPageIndex)
-    
+    router.push(removeAfterLastSlash(router.asPath) + '/' + newPageIndex)    
   }
 
-
-    // TODO merge duplicate code into one for the ? : operator
+  // TODO merge duplicate code into one for the ? : operator
   return (
     isOnCoverPage ? (
     <div className={styles.coverContainer}>
@@ -111,7 +108,7 @@ const BookViewer = ({bookData, pageIndex }: {bookData: BookData, pageIndex: numb
           initial="in"
           animate={["center"]}
         >
-          <Image src={bookData.bookCover} width={420} height={460} priority/>
+          <Image src={bookData.bookCover} width={420} height={460} priority alt=""/>
         </motion.div>
         <motion.div 
           className={styles.page0Description}
@@ -132,7 +129,7 @@ const BookViewer = ({bookData, pageIndex }: {bookData: BookData, pageIndex: numb
             animate={["center"]} 
             className={styles.page1ImageWrapper}
           >
-            <Image src={bookData.pagesData[pageIndex].pageImage ?? Page1} width={420} height={540} priority/>
+            <Image src={bookData.pagesData[pageIndex].pageImage ?? Page1} width={420} height={540} priority alt=""/>
           </motion.div>
           <motion.div 
             className={styles["page1Description"] + " " + styles["text"]}
