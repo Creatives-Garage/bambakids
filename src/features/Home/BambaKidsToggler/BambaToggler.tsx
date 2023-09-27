@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./BambaKidsToggler.module.scss";
+import { playClickSound } from "../../../shared/utils/soundClickEvents";
 
 const charactersData = [
   {
@@ -39,21 +40,10 @@ const charactersData = [
 
 function BambaKidsToggler() {
   const [activeCharacter, setActiveCharacter] = useState(0);
-  console.log(activeCharacter)
-  function showTrufena() {
-    setActiveCharacter(0);
-  }
-  function showJebet() {
-    setActiveCharacter(1);
-  }
-  function showTanu() {
-    setActiveCharacter(2);
-  }
-  function showAyanna() {
-    setActiveCharacter(3);
-  }
-  function showKwame() {
-    setActiveCharacter(4);
+
+  const handleCharacterSwitch = (characterNumber: number) =>{
+    setActiveCharacter(characterNumber);
+    playClickSound()
   }
 
   return (
@@ -61,7 +51,7 @@ function BambaKidsToggler() {
       <div className={styles.togglerContainer}>
         <div className={styles.togglesContainer}>
           <div
-            onClick={() => showTrufena()}
+            onClick={() => handleCharacterSwitch(0)}
             className={
               activeCharacter == 0
                 ? styles["togglerButton"] + " " + styles["active"]
@@ -75,7 +65,7 @@ function BambaKidsToggler() {
             />
           </div>
           <div
-            onClick={() => showJebet()}
+            onClick={() => handleCharacterSwitch(1)}
             className={
               activeCharacter == 1
                 ? styles["togglerButton"] + " " + styles["active"]
@@ -89,7 +79,7 @@ function BambaKidsToggler() {
             />
           </div>
           <div
-            onClick={() => showTanu()}
+            onClick={() => handleCharacterSwitch(2)}
             className={
               activeCharacter == 2
                 ? styles["togglerButton"] + " " + styles["active"]
@@ -103,7 +93,7 @@ function BambaKidsToggler() {
             />
           </div>
           <div
-            onClick={() => showAyanna()}
+            onClick={() => handleCharacterSwitch(3)}
             className={
               activeCharacter == 3
                 ? styles["togglerButton"] + " " + styles["active"]
@@ -117,7 +107,7 @@ function BambaKidsToggler() {
             />
           </div>
           <div
-            onClick={() => showKwame()}
+            onClick={() => handleCharacterSwitch(4)}
             className={
               activeCharacter == 4
                 ? styles["togglerButton"] + " " + styles["active"]
@@ -137,16 +127,14 @@ function BambaKidsToggler() {
             <p>{charactersData[activeCharacter].description}</p>
           </div>
           <div className={styles.photos}>
-            <div
-              className={styles["photo"]}
-            >
+            <div className={styles["photo"]}>
               <Image
                 src={charactersData[activeCharacter].fullpic}
                 alt="photo"
                 width={360}
                 height={391}
               />
-            </div>      
+            </div>
           </div>
         </div>
       </div>
