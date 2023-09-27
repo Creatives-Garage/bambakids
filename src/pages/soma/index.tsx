@@ -6,7 +6,7 @@ import SomaBookCard from "../../shared/SomaBookCard";
 import Button from "../../shared/Button";
 import Footer from "../../../public/icons/footerTazama.svg";
 import BabaPickUp from "../../../public/photos/books/BabasPickUp/cover.png";
-import Jebet from "../../../public/photos/books/Jebet.png";
+import Jebet from "../../../public/photos/books/JebetTheRunner/Cover.png";
 import Onyis from "../../../public/photos/books/Mama Onyis.png";
 
 const Soma: NextPage = () => {
@@ -14,7 +14,7 @@ const Soma: NextPage = () => {
     <div className={styles.pageWrapper}>
       <Nav />   
       <div className={styles.pageContent}>
-        <SomaBookCard link="/soma/babas-pickup" bookName="Babas Pick Up" image={BabaPickUp} />
+        <SomaBookCard link="/soma/babas-pickup/-1" bookName="Babas Pick Up" image={BabaPickUp} />
         <SomaBookCard link="/soma/jebet-the-runner" bookName="Jebet - The Runner" image={Jebet} />
       </div>
       {/* <div className={styles.loadMoreWrapper}>

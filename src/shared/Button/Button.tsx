@@ -1,14 +1,14 @@
-import React, { ButtonHTMLAttributes, MouseEvent } from "react";
+import React, { ButtonHTMLAttributes, MouseEvent, MouseEventHandler } from "react";
 import styles from "./Button.module.scss";
 
 interface ButtonProps {
   text?: string;
   active?: boolean;
   variant: string;
-  action?: any;
+  action?: MouseEventHandler<HTMLDivElement>;
   children?: React.ReactNode;
   icon?: boolean;
-  type?: any;
+  type?: "submit" | "reset" | "button";
 }
 
 const Button = ({ text, active, action, variant, children, type, icon }: ButtonProps) => {

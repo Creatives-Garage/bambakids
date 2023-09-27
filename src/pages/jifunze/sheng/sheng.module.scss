@@ -13,6 +13,8 @@
     padding-top: 24px;
     padding-bottom: 0px;
 
+    
+
     @media (max-width: 426px) {
         padding-top: 72px;        
     }
@@ -34,9 +36,13 @@
     font: Nunito;
     font-weight: 700;
     color: white;
+    margin-right: 10em;
+    
 
     &:hover{
         transform: translateY(-10%);
+        cursor: pointer;
+        
     }
 }
 

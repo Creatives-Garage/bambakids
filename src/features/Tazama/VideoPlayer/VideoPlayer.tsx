@@ -9,6 +9,7 @@ import Pause from '../../../../public/icons/pause.svg';
 import FullScreen from '../../../../public/icons/reduceScreen.svg';
 import SmallScreen from '../../../../public/icons/wideScreen.svg';
 import YoutubeEmbedder from "../YoutubeEmbedder/YoutubeEmbedder";
+import { playClickSound } from "../../../shared/utils/soundClickEvents";
 
 function VideoPlayer({data}: any){
   const [playStatus, setplayStatus] = useState<boolean>(false);
@@ -22,7 +23,7 @@ function VideoPlayer({data}: any){
   return (
     <div className={styles.componentWrapper}>
       <div className={styles.playerHeader}>
-        <button className={styles.buttonWrapper} onClick={()=> router.push("/tazama")}></button>      
+        <button className={styles.buttonWrapper} onClick={()=> {router.push("/tazama"); playClickSound()}}></button>      
         <div className={styles.videoTitleGroup}>
           <h1>{data?.videoName}</h1>
           <h2>{data?.categoryName}</h2>

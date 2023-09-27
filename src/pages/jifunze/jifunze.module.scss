@@ -1,13 +1,17 @@
 .page{
     background-color: #FFF996;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 .pageWrapper {
     display: flex;
     justify-content: space-around;
     padding-top: 80px;
-    height: 80vh;
+    height: 65vh;
     width: 100vw;
     overflow-x: hidden;
     overflow-y: hidden;
