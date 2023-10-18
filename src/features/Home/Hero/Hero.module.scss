@@ -6,6 +6,8 @@
     background-position: center;
     background-size: contain;
     height: 800px;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-family: 'Bamba';
@@ -68,7 +70,11 @@
 }
 
 .toggleBambaKidsSection{
-    margin-top: 56px;
+    margin-top: 0px;
+    
+    @media(max-width: 768px){
+      maargin-bottom: 24px;
+    }
 }
 
 .zigzag{

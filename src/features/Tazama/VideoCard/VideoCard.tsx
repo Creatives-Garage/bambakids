@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { playClickSound } from "../../../shared/utils/soundClickEvents";
 
+
 const cardVariant = {
   active: {
     opacity: 1,

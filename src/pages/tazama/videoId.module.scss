@@ -13,6 +13,8 @@
     padding: 48px 72px;
     height: 75%;
 
+    
+
     @media (max-width: 1025px) {
         padding: 48px 24px;
     }
@@ -24,25 +26,28 @@
     }
 }
 
-// .rightSideWrapper{
-//     height: 548px;
+.rightSideWrapper{
+     height: 100%;
 
-//     @media (max-width: 1025px) {
-        
-//     }
-// }
+}
 
 .suggestedVideosWrapper{
     position: relative;
     width: 100%;
     background: #B0C3FF;
     overflow-y: scroll;
-    height: 80%;
+    height: 100%;
+
+    @media (max-width: 1441px) {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        height: 66%;
+    }
 
     @media (max-width: 1025px) {
         overflow-y: hidden;
         overflow-x: scroll;
-        height: 90%;
+        height: 93%;
     }
 
     @media (max-width: 689px) {
@@ -58,6 +63,7 @@
     flex-direction: column;
     align-items: center;
     padding: 24px;
+    height: 100%;
     @media (max-width: 689px) {
         flex-direction: column; 
         gap: 1em;
